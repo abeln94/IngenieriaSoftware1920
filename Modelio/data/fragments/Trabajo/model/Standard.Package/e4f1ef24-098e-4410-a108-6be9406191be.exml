@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="notepadv3" version="4">
+  <OBJECT>
+    <ID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
+    <PID name="es.unizar.eina" mc="Standard.Package" uid="88fadc56-fd76-462a-96d7-d0a7848f0021"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[notepadv3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
+        <COMPID name="NotesDbAdapter" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+        <COMPID name="NoteEdit" mc="Standard.Class" uid="d3b01e72-8b3e-4d6d-af1d-42073bb5ff9d"/>
+        <COMPID name="EditText" mc="Standard.Class" uid="d1ea855e-d36e-4d13-8508-a506d65ac844"/>
+        <COMPID name="Categoria" mc="Standard.Class" uid="694feee4-35e5-4f0e-ae4b-4dfa8703344a"/>
+        <COMPID name="Nota" mc="Standard.Class" uid="01b06dec-151b-4623-aba9-1defad617c55"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
