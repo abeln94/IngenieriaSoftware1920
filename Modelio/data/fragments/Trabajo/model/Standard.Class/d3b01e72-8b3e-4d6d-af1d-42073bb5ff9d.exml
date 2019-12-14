@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="NoteEdit" version="4">
   <OBJECT>
     <ID name="NoteEdit" mc="Standard.Class" uid="d3b01e72-8b3e-4d6d-af1d-42073bb5ff9d"/>
-    <PID name="es.unizar.eina.notepadv3" mc="Standard.Package" uid="b137bbed-9728-4e0b-b8be-6c6978f36630"/>
+    <PID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -269,7 +269,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Target">
-              <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+              <ID name="NotesDbAdapter" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
             </LINK>
             <COMP relation="Opposite">
               <OBJECT>

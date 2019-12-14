@@ -2,6 +2,7 @@ package es.unizar.eina.send;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Concrete implementor utilizando aplicacion por defecto de Android para gestionar mail. No funciona en el emulador si no se ha configurado previamente el mail
@@ -11,28 +12,28 @@ public class MailImplementor implements SendImplementor {
     /**
      * actividad desde la cual se abrira la actividad de gestión de correo
      */
-    private Activity sourceActivity;
+    private AppCompatActivity sourceActivity;
 
     /**
      * Constructor
      *
      * @param source actividad desde la cual se abrira la actividad de gestion de correo
      */
-    public MailImplementor(Activity source) {
+    public MailImplementor(AppCompatActivity source) {
         setSourceActivity(source);
     }
 
     /**
      * Actualiza la actividad desde la cual se abrira la actividad de gestion de correo
      */
-    public void setSourceActivity(Activity source) {
+    public void setSourceActivity(AppCompatActivity source) {
         sourceActivity = source;
     }
 
     /**
      * Recupera la actividad desde la cual se abrira la actividad de gestion de correo
      */
-    public Activity getSourceActivity() {
+    public AppCompatActivity getSourceActivity() {
         return sourceActivity;
     }
 

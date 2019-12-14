@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nota" version="4">
   <OBJECT>
     <ID name="Nota" mc="Standard.Class" uid="01b06dec-151b-4623-aba9-1defad617c55"/>
-    <PID name="es.unizar.eina.notepadv3" mc="Standard.Package" uid="b137bbed-9728-4e0b-b8be-6c6978f36630"/>
+    <PID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

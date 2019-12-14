@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Categoria" version="4">
   <OBJECT>
     <ID name="Categoria" mc="Standard.Class" uid="694feee4-35e5-4f0e-ae4b-4dfa8703344a"/>
-    <PID name="es.unizar.eina.notepadv3" mc="Standard.Package" uid="b137bbed-9728-4e0b-b8be-6c6978f36630"/>
+    <PID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

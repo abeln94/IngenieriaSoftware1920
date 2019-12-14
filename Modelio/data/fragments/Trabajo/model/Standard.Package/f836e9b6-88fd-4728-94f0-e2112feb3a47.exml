@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Trabajo" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Aplicación" version="4">
   <OBJECT>
-    <ID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <ID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <PID name="Practica3" mc="Standard.Project" uid="8407e083-106d-4ccb-9412-74920056a256"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Trabajo]]></ATT>
+      <ATT name="Name"><![CDATA[Aplicación]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -29,6 +29,7 @@
         <COMPID name="Ordenar lista por titulo" mc="Standard.Interaction" uid="4dc2c6dc-93b5-43c9-8af6-ca256f2e9052"/>
         <COMPID name="Actualizar nota" mc="Standard.Interaction" uid="89fc25e4-0d98-4050-975c-5f70180cb161"/>
         <COMPID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
+        <COMPID name="Enviar nota" mc="Standard.Interaction" uid="01d2af3c-db85-4ffd-8e3a-caaf82a2397e"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Usuario" mc="Standard.Actor" uid="927008b3-4394-4290-80f1-c1acd5dde7bb"/>
@@ -51,19 +52,13 @@
         <COMPID name="database" mc="Standard.Component" uid="a84b33f7-23c2-4098-a87a-68c19f4b2dfd"/>
         <COMPID name="Enviar SMS" mc="Standard.UseCase" uid="0343fc5f-87f0-467f-9404-aee1fb882ade"/>
         <COMPID name="Enviar e-mail" mc="Standard.UseCase" uid="6712c76d-0dea-4da5-b742-bb24e90f5e70"/>
-        <COMPID name="SendAbstraction" mc="Standard.Class" uid="71c6abf9-8e0b-4865-8f75-6f16a1385b6b"/>
-        <COMPID name="SendAbstractionImpl" mc="Standard.Class" uid="bf566221-7400-4928-93f5-cf8143772e65"/>
-        <COMPID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
-        <COMPID name="MailImplementor" mc="Standard.Class" uid="ee139e6c-ab67-4a16-a53d-f3feb844f9b9"/>
-        <COMPID name="SMSImplementor" mc="Standard.Class" uid="b9486eb6-c89e-478b-91ae-65440b2515a3"/>
-        <COMPID name="Activity" mc="Standard.Class" uid="f161acde-3733-4607-973e-ce6155e88b18"/>
         <COMPID name="enum" mc="Standard.DataType" uid="86766ee8-e6a2-45a6-8197-64393e64aedb"/>
         <COMPID name="appEMAIL.apk" mc="Standard.Artifact" uid="1ac2f7b9-2c41-4c84-87e8-1c4d8b4a9633"/>
         <COMPID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>
-        <COMPID name="Aplicacion notas movil" mc="Standard.UseCaseDiagram" uid="0f6f94d1-2235-4c69-88d7-5adb702540f5"/>
+        <COMPID name="Diagrama casos de uso" mc="Standard.UseCaseDiagram" uid="0f6f94d1-2235-4c69-88d7-5adb702540f5"/>
         <COMPID name="Diagrama de paquetes" mc="Standard.ClassDiagram" uid="60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4"/>
         <COMPID name="Diagrama despliegue" mc="Standard.DeploymentDiagram" uid="189503b0-465a-47b4-a10e-8a2bc9f62491"/>
         <COMPID name="Diagrama de componentes" mc="Standard.ClassDiagram" uid="d85c37bd-c4d9-4389-8161-690f2d548111"/>

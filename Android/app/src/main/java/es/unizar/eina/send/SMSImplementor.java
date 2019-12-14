@@ -3,43 +3,44 @@ package es.unizar.eina.send;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsManager;
 
 /**
- * Created by usuario on 15/11/15.
+ * Permite enviar elementos a traves de SMS
  */
 public class SMSImplementor implements SendImplementor {
 
     /**
-     * actividad desde la cual se abrir� la actividad de gesti�n de correo
+     * actividad desde la cual se abrirá la actividad de gestión de correo
      */
-    private Activity sourceActivity;
+    private AppCompatActivity sourceActivity;
 
     /**
      * Constructor
      *
-     * @param source actividad desde la cual se abrir� la actividad de gesti�n de correo
+     * @param source actividad desde la cual se abrirá la actividad de gestión de correo
      */
-    public SMSImplementor(Activity source) {
+    public SMSImplementor(AppCompatActivity source) {
         setSourceActivity(source);
     }
 
     /**
-     * Actualiza la actividad desde la cual se abrir� la actividad de gesti�n de correo
+     * Actualiza la actividad desde la cual se abrirá la actividad de gestión de correo
      */
-    public void setSourceActivity(Activity source) {
+    public void setSourceActivity(AppCompatActivity source) {
         sourceActivity = source;
     }
 
     /**
      * Recupera la actividad desde la cual se abrirá la actividad de gestión de correo
      */
-    public Activity getSourceActivity() {
+    public AppCompatActivity getSourceActivity() {
         return sourceActivity;
     }
 
     /**
-     * Implementaci�n del m�todo send utilizando la aplicaci�n de gesti�n de correo de Android
+     * Implementación del método send utilizando la aplicación de gestión de correo de Android
      * Solo se copia el asunto y el cuerpo
      *
      * @param subject asunto

@@ -13,9 +13,10 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import es.unizar.eina.send.SendAbstractionImpl;
-import es.unizar.eina.send.SendImplementor;
 
-
+/**
+ * Actividad principal. Muestra el listado de notas.
+ */
 public class Notepadv3 extends AppCompatActivity {
 
     private static final int ACTIVITY_CREATE = 0;
@@ -29,8 +30,8 @@ public class Notepadv3 extends AppCompatActivity {
 
     private NotesDbAdapter mDbHelper;
     private ListView mList;
-    private SendAbstractionImpl sendSMS = new SendAbstractionImpl(this, SendImplementor.TYPES.SMS);
-    private SendAbstractionImpl sendEMAIL = new SendAbstractionImpl(this, SendImplementor.TYPES.EMAIL);
+    private SendAbstractionImpl sendSMS = new SendAbstractionImpl(this, SendAbstractionImpl.TYPES.SMS);
+    private SendAbstractionImpl sendEMAIL = new SendAbstractionImpl(this, SendAbstractionImpl.TYPES.EMAIL);
 
 
     /**
@@ -51,6 +52,9 @@ public class Notepadv3 extends AppCompatActivity {
 
     }
 
+    /**
+     * Populates the list with the notes
+     */
     private void fillData() {
         // Get all of the notes from the database and create the item list
         Cursor mNotesCursor = mDbHelper.fetchAllNotes();
@@ -121,12 +125,19 @@ public class Notepadv3 extends AppCompatActivity {
         return super.onContextItemSelected(item);
     }
 
+    /**
+     * Starts the activity to create a new note
+     */
     private void createNote() {
         Intent i = new Intent(this, NoteEdit.class);
         startActivityForResult(i, ACTIVITY_CREATE);
     }
 
-
+    /**
+     * Starts the activity to edit an existing note
+     * @param position unused
+     * @param id identifier of the note that will be edited
+     */
     protected void editNote(int position, long id) {
         Intent i = new Intent(this, NoteEdit.class);
         i.putExtra(NotesDbAdapter.KEY_ROWID, id);

@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SendImplementor" version="4">
   <OBJECT>
     <ID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="send" mc="Standard.Package" uid="8b00dc7a-737f-4b1d-a8d5-3e48d565cef6"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -48,7 +48,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="Activity" mc="Standard.Class" uid="f161acde-3733-4607-973e-ce6155e88b18"/>
+                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -87,7 +87,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="Activity" mc="Standard.Class" uid="f161acde-3733-4607-973e-ce6155e88b18"/>
+                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

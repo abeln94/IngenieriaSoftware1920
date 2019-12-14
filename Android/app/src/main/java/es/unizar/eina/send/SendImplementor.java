@@ -1,6 +1,7 @@
 package es.unizar.eina.send;
 
 import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Define la interfaz para las clases de la implementacion.
@@ -8,17 +9,15 @@ import android.app.Activity;
  */
 public interface SendImplementor {
 
-    enum TYPES {SMS, EMAIL}
-
     /**
-     * Actualiza la actividad desde la cual se abrira la actividad de envi�o de notas
+     * Actualiza la actividad desde la cual se abrira la actividad de envío de notas
      */
-    void setSourceActivity(Activity source);
+    void setSourceActivity(AppCompatActivity source);
 
     /**
      * Recupera la actividad desde la cual se abrira la actividad de envio de notas
      */
-    Activity getSourceActivity();
+    AppCompatActivity getSourceActivity();
 
     /**
      * Permite lanzar la actividad encargada de gestionar el envio de notas

@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+/**
+ * Actividad para editar las notas
+ */
 public class NoteEdit extends AppCompatActivity {
 
     private EditText mTitleText;
@@ -56,6 +59,10 @@ public class NoteEdit extends AppCompatActivity {
 
         });
     }
+
+    /**
+     * Fills the elements with the note data
+     */
     private void populateFields() {
         if (mRowId != null) {
             Cursor note = mDbHelper.fetchNote(mRowId);
@@ -82,6 +89,10 @@ public class NoteEdit extends AppCompatActivity {
         super.onResume();
         populateFields();
     }
+
+    /**
+     * Saves the current note
+     */
     private void saveState() {
         String title = mTitleText.getText().toString();
         String body = mBodyText.getText().toString();

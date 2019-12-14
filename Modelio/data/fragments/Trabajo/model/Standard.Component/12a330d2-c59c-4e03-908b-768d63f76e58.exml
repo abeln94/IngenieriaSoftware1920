@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="application" version="4">
   <OBJECT>
     <ID name="application" mc="Standard.Component" uid="12a330d2-c59c-4e03-908b-768d63f76e58"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -72,8 +72,8 @@
         </OBJECT>
       </COMP>
       <COMP relation="OwnedElement">
-        <COMPID name="es.unizar.eina.notepadv3" mc="Standard.Package" uid="b137bbed-9728-4e0b-b8be-6c6978f36630"/>
         <COMPID name="android" mc="Standard.Package" uid="88ae3eb2-3ed2-42e2-a22a-0714c73d571c"/>
+        <COMPID name="es.unizar.eina" mc="Standard.Package" uid="88fadc56-fd76-462a-96d7-d0a7848f0021"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
