@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="android" version="4">
+  <OBJECT>
+    <ID name="android" mc="Standard.Package" uid="88ae3eb2-3ed2-42e2-a22a-0714c73d571c"/>
+    <PID name="application" mc="Standard.Component" uid="12a330d2-c59c-4e03-908b-768d63f76e58"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[android]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="view" mc="Standard.Package" uid="7d2d00c2-bfe5-4fdb-a258-48f228ecefe1"/>
+        <COMPID name="database" mc="Standard.Package" uid="604f48e4-cfbf-4ead-8e20-7463d6dd890f"/>
+        <COMPID name="widget" mc="Standard.Package" uid="9f13c741-6546-4cef-8c65-9c85e88885c1"/>
+        <COMPID name="content" mc="Standard.Package" uid="abd8c6e0-0cb2-4d35-afb8-8bb3e24ecbb8"/>
+        <COMPID name="support.v7.app" mc="Standard.Package" uid="f3002e25-8c45-43ba-a6d4-1e492c327e6a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

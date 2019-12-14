@@ -1,0 +1,16 @@
+#Mon Dec 09 11:37:28 CET 2019
+org.modelio.diagram.editor.OpenedDiagrams9='Diagrama de paquetes' {60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams8='fecthAllNotes()' {888a248f-4f81-4024-a2aa-40eafdbab95c} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Buscar todas las notas' {523371ec-31c8-42fd-a91e-3e5d1530bf39} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Actualizar nota' {6a209fe4-4940-4ccc-b600-d59536469cd9} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='patron bridge' {c49472ba-35ce-4ea2-aec5-000414493e38} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Aplicacion notas movil' {0f6f94d1-2235-4c69-88d7-5adb702540f5} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams14='Crear categoria' {548d5cc4-2894-4cef-8a16-f5a85b746767} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Trabajo Class diagram' {8042f457-3267-4422-ade7-cc8b4d3f3bd2} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams13='Buscar nota' {c3df3adb-3485-4573-bbf6-734c6f086709} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Inicializacion de la aplicacion' {40addec3-5647-4d0c-8f9b-6925d9512e77} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams12='Borrar nota' {903cd85f-e428-495e-b1e0-9c460cad961d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Modificar categoria' {bfb0e0d3-ec95-4788-aabe-5a51eb0f0f34} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams11='Crear nota' {3ba1e43c-9982-4645-968c-580de1c1f56d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Diagrama de componentes' {d85c37bd-c4d9-4389-8161-690f2d548111} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Diagrama despliegue' {189503b0-465a-47b4-a10e-8a2bc9f62491} Standard.DeploymentDiagram

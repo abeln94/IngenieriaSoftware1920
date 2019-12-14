@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Trabajo" version="4">
+  <OBJECT>
+    <ID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Practica3" mc="Standard.Project" uid="8407e083-106d-4ccb-9412-74920056a256"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Trabajo]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Inicializacion de la aplicacion" mc="Standard.Interaction" uid="afe1db3e-5053-49ee-8517-4ac9e3297ae4"/>
+        <COMPID name="Crear nota" mc="Standard.Interaction" uid="a8e5dcfe-c21f-4a28-8f15-befa60ee705e"/>
+        <COMPID name="Borrar nota" mc="Standard.Interaction" uid="58f71df1-5bc7-4b67-94d5-a55895ed3d16"/>
+        <COMPID name="Buscar nota" mc="Standard.Interaction" uid="4c0d1a14-76aa-4eb0-adf1-963dee0c8a2d"/>
+        <COMPID name="Buscar todas las notas" mc="Standard.Interaction" uid="625cc54e-d88f-4b2c-a6ef-e2f00882b615"/>
+        <COMPID name="Crear categoria" mc="Standard.Interaction" uid="7d4edff3-e935-412c-9100-b7801a424ae6"/>
+        <COMPID name="Modificar categoria" mc="Standard.Interaction" uid="8fd53874-b7e1-4ec5-8870-dcb147af4c5c"/>
+        <COMPID name="Eliminar categoria" mc="Standard.Interaction" uid="e19f5c8b-9c14-45cb-ac61-a12df719ac77"/>
+        <COMPID name="Asignar categoria" mc="Standard.Interaction" uid="b6d0c751-1e14-4bf4-a750-3b0bdc0ee816"/>
+        <COMPID name="Modificar categoria asignada" mc="Standard.Interaction" uid="b5ff01c1-6289-4c8c-8d8b-1485d4668c2a"/>
+        <COMPID name="Ordenar lista por categoria" mc="Standard.Interaction" uid="a1c06351-81e3-40a8-9b84-c5cf7ae233ff"/>
+        <COMPID name="Filtrar lista por categoria" mc="Standard.Interaction" uid="691bc82a-8df5-4066-8753-90777cecc506"/>
+        <COMPID name="Ordenar lista por titulo" mc="Standard.Interaction" uid="4dc2c6dc-93b5-43c9-8af6-ca256f2e9052"/>
+        <COMPID name="Actualizar nota" mc="Standard.Interaction" uid="89fc25e4-0d98-4050-975c-5f70180cb161"/>
+        <COMPID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Usuario" mc="Standard.Actor" uid="927008b3-4394-4290-80f1-c1acd5dde7bb"/>
+        <COMPID name="Crear nota" mc="Standard.UseCase" uid="69f62ee5-a8d4-4ec0-aff1-3e277955e9ca"/>
+        <COMPID name="Modificar nota ya existente" mc="Standard.UseCase" uid="6095d3aa-da01-4b83-9a78-66d082e41f59"/>
+        <COMPID name="Eliminar nota ya existente" mc="Standard.UseCase" uid="73f0c746-34af-4e74-9130-a0afe5ba05f0"/>
+        <COMPID name="Eliminar Categoria" mc="Standard.UseCase" uid="f0208ef1-2143-44bf-a667-d8a8841dc81c"/>
+        <COMPID name="Modificar categoria" mc="Standard.UseCase" uid="7def0439-7a9d-4c2b-ba00-97139222ded4"/>
+        <COMPID name="Crear categoria" mc="Standard.UseCase" uid="80305300-124e-41c5-af4e-3210ca260fad"/>
+        <COMPID name="Consultar lista de notas ya existentes" mc="Standard.UseCase" uid="d66cd5e7-0e87-4c0f-ab1a-b3305b1a9fdf"/>
+        <COMPID name="Ordenar lista por titulo" mc="Standard.UseCase" uid="7f530a12-8e20-4efd-9cde-fee6ebf54069"/>
+        <COMPID name="Filtrar lista por categoria" mc="Standard.UseCase" uid="4d6055aa-94f8-4603-846e-444a8835d5e2"/>
+        <COMPID name="Ordenar lista por categoria" mc="Standard.UseCase" uid="1c11c45c-ad88-45bb-8086-edc03f10ef77"/>
+        <COMPID name="Modificar categoria previamente asignada" mc="Standard.UseCase" uid="af4f0247-6f37-45ee-949d-9144b0735908"/>
+        <COMPID name="Asignar categoria a nota existente" mc="Standard.UseCase" uid="1ed87185-f34b-468b-9dec-6b9cd89fbdc4"/>
+        <COMPID name="Android OS" mc="Standard.Node" uid="4aea982f-953b-47f9-ad08-b4ffca4827e7"/>
+        <COMPID name="app.apk" mc="Standard.Artifact" uid="e40cbe33-0767-480a-8a98-2a112be48697"/>
+        <COMPID name="sqlite" mc="Standard.Artifact" uid="eabb7edd-8ff1-42f7-a6e7-2e4ee66e1508"/>
+        <COMPID name="application" mc="Standard.Component" uid="12a330d2-c59c-4e03-908b-768d63f76e58"/>
+        <COMPID name="database" mc="Standard.Component" uid="a84b33f7-23c2-4098-a87a-68c19f4b2dfd"/>
+        <COMPID name="Enviar SMS" mc="Standard.UseCase" uid="0343fc5f-87f0-467f-9404-aee1fb882ade"/>
+        <COMPID name="Enviar e-mail" mc="Standard.UseCase" uid="6712c76d-0dea-4da5-b742-bb24e90f5e70"/>
+        <COMPID name="SendAbstraction" mc="Standard.Class" uid="71c6abf9-8e0b-4865-8f75-6f16a1385b6b"/>
+        <COMPID name="SendAbstractionImpl" mc="Standard.Class" uid="bf566221-7400-4928-93f5-cf8143772e65"/>
+        <COMPID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
+        <COMPID name="MailImplementor" mc="Standard.Class" uid="ee139e6c-ab67-4a16-a53d-f3feb844f9b9"/>
+        <COMPID name="SMSImplementor" mc="Standard.Class" uid="b9486eb6-c89e-478b-91ae-65440b2515a3"/>
+        <COMPID name="Activity" mc="Standard.Class" uid="f161acde-3733-4607-973e-ce6155e88b18"/>
+        <COMPID name="enum" mc="Standard.DataType" uid="86766ee8-e6a2-45a6-8197-64393e64aedb"/>
+        <COMPID name="appEMAIL.apk" mc="Standard.Artifact" uid="1ac2f7b9-2c41-4c84-87e8-1c4d8b4a9633"/>
+        <COMPID name="envioSMS" mc="Standard.Node" uid="cf6faad4-753b-4f3a-bd2c-17563829f374"/>
+        <COMPID name="envioEMAIL" mc="Standard.Node" uid="468ee07f-edc4-43b6-9bfa-47ef4caf17ed"/>
+        <COMPID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>
+        <COMPID name="Aplicacion notas movil" mc="Standard.UseCaseDiagram" uid="0f6f94d1-2235-4c69-88d7-5adb702540f5"/>
+        <COMPID name="Diagrama de paquetes" mc="Standard.ClassDiagram" uid="60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4"/>
+        <COMPID name="Diagrama despliegue" mc="Standard.DeploymentDiagram" uid="189503b0-465a-47b4-a10e-8a2bc9f62491"/>
+        <COMPID name="Diagrama de componentes" mc="Standard.ClassDiagram" uid="d85c37bd-c4d9-4389-8161-690f2d548111"/>
+        <COMPID name="patron bridge" mc="Standard.ClassDiagram" uid="c49472ba-35ce-4ea2-aec5-000414493e38"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="sqlite" version="4">
+  <OBJECT>
+    <ID name="sqlite" mc="Standard.Package" uid="2289afd7-3025-4f06-9fcf-8c5e34d30bbb"/>
+    <PID name="database" mc="Standard.Package" uid="604f48e4-cfbf-4ead-8e20-7463d6dd890f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[sqlite]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+        <COMPID name="SQLiteOpenHelper" mc="Standard.Class" uid="56ebe7fb-2e19-4fe6-8644-5b5dcc6d4efd"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

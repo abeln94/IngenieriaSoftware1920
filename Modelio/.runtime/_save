@@ -1,0 +1,9 @@
+#Tue Nov 26 18:11:54 CET 2019
+org.modelio.diagram.editor.OpenedDiagrams7='Diagrama de componentes' {d85c37bd-c4d9-4389-8161-690f2d548111} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Actualizar nota' {6a209fe4-4940-4ccc-b600-d59536469cd9} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Crear nota' {3ba1e43c-9982-4645-968c-580de1c1f56d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Inicializacion de la aplicacion' {40addec3-5647-4d0c-8f9b-6925d9512e77} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Borrar nota' {903cd85f-e428-495e-b1e0-9c460cad961d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Diagrama despliegue' {189503b0-465a-47b4-a10e-8a2bc9f62491} Standard.DeploymentDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Trabajo Class diagram' {8042f457-3267-4422-ade7-cc8b4d3f3bd2} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Diagrama de paquetes' {60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4} Standard.ClassDiagram
