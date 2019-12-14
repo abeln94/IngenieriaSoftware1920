@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="database" version="4">
+  <OBJECT>
+    <ID name="database" mc="Standard.Package" uid="604f48e4-cfbf-4ead-8e20-7463d6dd890f"/>
+    <PID name="android" mc="Standard.Package" uid="88ae3eb2-3ed2-42e2-a22a-0714c73d571c"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[database]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="sqlite" mc="Standard.Package" uid="2289afd7-3025-4f06-9fcf-8c5e34d30bbb"/>
+        <COMPID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
