@@ -55,6 +55,7 @@
         <COMPID name="enum" mc="Standard.DataType" uid="86766ee8-e6a2-45a6-8197-64393e64aedb"/>
         <COMPID name="appEMAIL.apk" mc="Standard.Artifact" uid="1ac2f7b9-2c41-4c84-87e8-1c4d8b4a9633"/>
         <COMPID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
+        <COMPID name="Enviar nota" mc="Standard.UseCase" uid="bad1ea54-df17-4919-9b9a-18d91d32cdf2"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>
