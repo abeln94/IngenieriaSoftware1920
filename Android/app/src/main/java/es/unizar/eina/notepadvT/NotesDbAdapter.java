@@ -22,6 +22,9 @@ public class NotesDbAdapter {
 
     public static final String KEY_TITLE = "title";
     public static final String KEY_BODY = "body";
+    public static final String KEY_CATEGORY = "category";
+
+    public static final String KEY_NAME = "name";
     public static final String KEY_ROWID = "_id";
 
     private static final String TAG = "NotesDbAdapter";
@@ -31,13 +34,17 @@ public class NotesDbAdapter {
     /**
      * Database creation sql statement
      */
-    private static final String DATABASE_CREATE =
+    private static final String DATABASE_CREATE_NOTES =
             "create table notes (_id integer primary key autoincrement, "
-                    + "title text not null, body text not null);";
+                    + "title text not null, body text not null, category integer);";
+    private static final String DATABASE_CREATE_CATEGORIES =
+            "create table categories (_id integer primary key autoincrement, "
+                    + "name text not null);";
 
     private static final String DATABASE_NAME = "data";
-    private static final String DATABASE_TABLE = "notes";
-    private static final int DATABASE_VERSION = 2;
+    private static final String DATABASE_TABLE_NOTES = "notes";
+    private static final String DATABASE_TABLE_CATEGORIES = "categories";
+    private static final int DATABASE_VERSION = 4;
 
     private final Context mCtx;
 
@@ -50,14 +57,16 @@ public class NotesDbAdapter {
         @Override
         public void onCreate(SQLiteDatabase db) {
 
-            db.execSQL(DATABASE_CREATE);
+            db.execSQL(DATABASE_CREATE_NOTES);
+            db.execSQL(DATABASE_CREATE_CATEGORIES);
         }
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
             Log.w(TAG, "Upgrading database from version " + oldVersion + " to "
                     + newVersion + ", which will destroy all old data");
-            db.execSQL("DROP TABLE IF EXISTS notes");
+            db.execSQL("DROP TABLE IF EXISTS notes;");
+            db.execSQL("DROP TABLE IF EXISTS categories;");
             onCreate(db);
         }
     }
@@ -101,12 +110,13 @@ public class NotesDbAdapter {
      * @param body  the body of the note
      * @return rowId or -1 if failed
      */
-    public long createNote(String title, String body) {
+    public long createNote(String title, String body, Integer category) {
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_BODY, body);
+        initialValues.put(KEY_CATEGORY, category);
 
-        return mDb.insert(DATABASE_TABLE, null, initialValues);
+        return mDb.insert(DATABASE_TABLE_NOTES, null, initialValues);
     }
 
     /**
@@ -116,8 +126,7 @@ public class NotesDbAdapter {
      * @return true if deleted, false otherwise
      */
     public boolean deleteNote(long rowId) {
-
-        return mDb.delete(DATABASE_TABLE, KEY_ROWID + "=" + rowId, null) > 0;
+        return mDb.delete(DATABASE_TABLE_NOTES, KEY_ROWID + "=" + rowId, null) > 0;
     }
 
     /**
@@ -125,10 +134,23 @@ public class NotesDbAdapter {
      *
      * @return Cursor over all notes
      */
-    public Cursor fetchAllNotes() {
-
-        return mDb.query(DATABASE_TABLE, new String[]{KEY_ROWID, KEY_TITLE,
-                KEY_BODY}, null, null, null, null, KEY_TITLE + " ASC");
+    public Cursor fetchAllNotes(String orderBy, String category) {
+//        if (category != null) {
+//            category = KEY_CATEGORY + "=" + fetchCategory(category);
+//        }
+        //return mDb.rawQuery("SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + "," + KEY_TITLE + "," + KEY_BODY + "," + KEY_NAME + " FROM " + DATABASE_TABLE_NOTES + " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES+"."+KEY_ROWID,null);
+        return mDb.rawQuery(
+                "SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + ", " +
+                        KEY_TITLE + ", " +
+                        KEY_BODY + ", " +
+                        DATABASE_TABLE_CATEGORIES + "." + KEY_NAME + " AS " + KEY_NAME +
+                        " FROM " + DATABASE_TABLE_NOTES + "" +
+                        " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES + "." + KEY_ROWID +
+                        (category != null ? " WHERE " + KEY_NAME + "='" + category + '\'' : "") +
+                        (orderBy != null ? " ORDER BY " + orderBy : "")
+                , null);
+//        return mDb.query(DATABASE_TABLE_NOTES, new String[]{KEY_ROWID, KEY_TITLE,
+//                KEY_BODY, KEY_CATEGORY}, category, null, null, null, orderBy);
     }
 
     /**
@@ -142,8 +164,8 @@ public class NotesDbAdapter {
 
         Cursor mCursor =
 
-                mDb.query(true, DATABASE_TABLE, new String[]{KEY_ROWID,
-                                KEY_TITLE, KEY_BODY}, KEY_ROWID + "=" + rowId, null,
+                mDb.query(true, DATABASE_TABLE_NOTES, new String[]{KEY_ROWID,
+                                KEY_TITLE, KEY_BODY, KEY_CATEGORY}, KEY_ROWID + "=" + rowId, null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
@@ -162,11 +184,97 @@ public class NotesDbAdapter {
      * @param body  value to set note body to
      * @return true if the note was successfully updated, false otherwise
      */
-    public boolean updateNote(long rowId, String title, String body) {
+    public boolean updateNote(long rowId, String title, String body, Integer category) {
         ContentValues args = new ContentValues();
         args.put(KEY_TITLE, title);
         args.put(KEY_BODY, body);
+        args.put(KEY_CATEGORY, category);
 
-        return mDb.update(DATABASE_TABLE, args, KEY_ROWID + "=" + rowId, null) > 0;
+        return mDb.update(DATABASE_TABLE_NOTES, args, KEY_ROWID + "=" + rowId, null) > 0;
+    }
+
+    /**
+     * Create a new note using the title and body provided. If the note is
+     * successfully created return the new rowId for that note, otherwise return
+     * a -1 to indicate failure.
+     *
+     * @param name the name of the category
+     * @return rowId or -1 if failed
+     */
+    public long createCategory(String name) {
+        ContentValues initialValues = new ContentValues();
+        initialValues.put(KEY_NAME, name);
+
+        return mDb.insert(DATABASE_TABLE_CATEGORIES, null, initialValues);
+    }
+
+    /**
+     * Delete the note with the given rowId
+     *
+     * @param rowId id of note to delete
+     * @return true if deleted, false otherwise
+     */
+    public boolean deleteCategory(long rowId) {
+
+        return mDb.delete(DATABASE_TABLE_CATEGORIES, KEY_ROWID + "=" + rowId, null) > 0;
+    }
+
+    /**
+     * Return a Cursor over the list of all notes in the database
+     *
+     * @return Cursor over all notes
+     */
+    public Cursor fetchAllCategories() {
+        return mDb.query(DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID, KEY_NAME}, null, null, null, null, null);
+    }
+
+    /**
+     * Return a Cursor positioned at the note that matches the given rowId
+     *
+     * @param rowId id of note to retrieve
+     * @return Cursor positioned to matching note, if found
+     * @throws SQLException if note could not be found/retrieved
+     */
+    public Cursor fetchCategory(long rowId) throws SQLException {
+
+        Cursor mCursor =
+                mDb.query(true, DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID,
+                                KEY_NAME}, KEY_ROWID + "=" + rowId, null,
+                        null, null, null, null);
+        if (mCursor != null) {
+            mCursor.moveToFirst();
+        }
+        return mCursor;
+    }
+
+
+    public Integer fetchCategory(String name) {
+        if (name == null || name.isEmpty()) return null;
+
+        Cursor mCursor = mDb.query(true, DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID, KEY_NAME}, KEY_NAME + " like '" + name + '\'', null, null, null, null, null);
+
+        if (mCursor.getCount() == 0) {
+            createCategory(name);
+            mCursor = mDb.query(true, DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID, KEY_NAME}, KEY_NAME + " like '" + name + '\'', null, null, null, null, null);
+        }
+
+        mCursor.moveToFirst();
+        return mCursor.getInt(mCursor.getColumnIndex(KEY_ROWID));
+    }
+
+    /**
+     * Update the note using the details provided. The note to be updated is
+     * specified using the rowId, and it is altered to use the title and body
+     * values passed in
+     *
+     * @param rowId id of note to update
+     * @param name  value to set category name to
+     * @return true if the note was successfully updated, false otherwise
+     */
+    public boolean updateCategory(long rowId, String name) {
+        ContentValues args = new ContentValues();
+        args.put(KEY_NAME, name);
+
+        return mDb.update(DATABASE_TABLE_CATEGORIES, args, KEY_ROWID + "=" + rowId, null) > 0;
     }
 }

@@ -9,8 +9,11 @@ import android.view.MenuItem;
 import android.database.Cursor;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.RadioGroup;
 import android.widget.SimpleCursorAdapter;
+import android.widget.Spinner;
 
 import es.unizar.eina.send.SendAbstractionImpl;
 
@@ -27,11 +30,16 @@ public class NotepadvT extends AppCompatActivity {
     private static final int EDIT_ID = Menu.FIRST + 2;
     private static final int SEND_SMS_ID = Menu.FIRST + 3;
     private static final int SEND_EMAIL_ID = Menu.FIRST + 4;
+    private static final int CATEGORIES_ID = Menu.FIRST + 5;
 
     private NotesDbAdapter mDbHelper;
     private ListView mList;
     private SendAbstractionImpl sendSMS = new SendAbstractionImpl(this, SendAbstractionImpl.TYPES.SMS);
     private SendAbstractionImpl sendEMAIL = new SendAbstractionImpl(this, SendAbstractionImpl.TYPES.EMAIL);
+
+    private Spinner mCategories;
+    private RadioGroup mSortBy;
+    private CheckBox mFilter;
 
 
     /**
@@ -46,7 +54,38 @@ public class NotepadvT extends AppCompatActivity {
         mDbHelper = new NotesDbAdapter(this);
         mDbHelper.open();
         mList = (ListView) findViewById(R.id.list);
+        mFilter = (CheckBox) findViewById(R.id.filter);
+        mCategories = (Spinner) findViewById(R.id.categories);
+        mSortBy = (RadioGroup) findViewById(R.id.sortBy);
+
+        mFilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                fillData();
+            }
+        });
+        mCategories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (mFilter.isChecked()) {
+                    fillData();
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+        mSortBy.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                fillData();
+            }
+        });
+
         fillData();
+        fillCategories();
 
         registerForContextMenu(mList);
 
@@ -57,14 +96,28 @@ public class NotepadvT extends AppCompatActivity {
      */
     private void fillData() {
         // Get all of the notes from the database and create the item list
-        Cursor mNotesCursor = mDbHelper.fetchAllNotes();
+        String category = null;
+        if (mFilter.isChecked()) {
+            Cursor category_cursor = (Cursor) mCategories.getSelectedItem();
+            category = category_cursor.getString(category_cursor.getColumnIndex(NotesDbAdapter.KEY_NAME));
+        }
+        String sortBy = null;
+        switch (mSortBy.getCheckedRadioButtonId()) {
+            case R.id.sort_title:
+                sortBy = NotesDbAdapter.KEY_TITLE;
+                break;
+            case R.id.sort_category:
+                sortBy = NotesDbAdapter.KEY_NAME;
+                break;
+        }
+        Cursor mNotesCursor = mDbHelper.fetchAllNotes(sortBy, category);
         startManagingCursor(mNotesCursor);
 
         // Create an array to specify the fields we want to display in the list (only TITLE)
-        String[] from = new String[]{NotesDbAdapter.KEY_TITLE};
+        String[] from = new String[]{NotesDbAdapter.KEY_TITLE, NotesDbAdapter.KEY_NAME};
 
         // and an array of the fields we want to bind those fields to (in this case just text1)
-        int[] to = new int[]{R.id.text1};
+        int[] to = new int[]{R.id.text1, R.id.text2};
 
         // Now create an array adapter and set it to display using our row
         SimpleCursorAdapter notes =
@@ -72,11 +125,24 @@ public class NotepadvT extends AppCompatActivity {
         mList.setAdapter(notes);
     }
 
+    private void fillCategories() {
+        Cursor c = mDbHelper.fetchAllCategories();
+        SimpleCursorAdapter adapter = new SimpleCursorAdapter(this,
+                R.layout.categories_row,
+                c,
+                new String[]{NotesDbAdapter.KEY_NAME},
+                new int[]{R.id.text1}
+        );
+        adapter.setStringConversionColumn(c.getColumnIndex(NotesDbAdapter.KEY_NAME));
+        mCategories.setAdapter(adapter);
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
+        menu.add(Menu.NONE, CATEGORIES_ID, Menu.NONE, "Edit categories"); //TODO: extract resource
         return result;
     }
 
@@ -86,6 +152,9 @@ public class NotepadvT extends AppCompatActivity {
             case INSERT_ID:
                 createNote();
                 return true;
+            case CATEGORIES_ID:
+                editCategories();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -145,10 +214,15 @@ public class NotepadvT extends AppCompatActivity {
     }
 
 
+    private void editCategories() {
+        startActivityForResult(new Intent(this, Categories.class), ACTIVITY_EDIT);
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
         fillData();
+        fillCategories();
     }
 }
 
