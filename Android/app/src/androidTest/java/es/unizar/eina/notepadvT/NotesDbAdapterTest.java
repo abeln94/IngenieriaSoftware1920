@@ -1,9 +1,12 @@
-package es.unizar.eina.notepadv3;
+package es.unizar.eina.notepadvT;
 
 import android.test.AndroidTestCase;
 
 public class NotesDbAdapterTest extends AndroidTestCase {
-
+    @Override
+    public void tearDown() throws Exception {
+        super.tearDown();
+    }
 
     // ------------------- Tests -------------------
 
@@ -47,7 +50,7 @@ public class NotesDbAdapterTest extends AndroidTestCase {
 
 
     private void testCreateNote(String title, String body, int result){
-        final long actual = getAdapter().createNote(title, body);
+        final long actual = getAdapter().createNote(title, body, null);
         if(result >= 0){
             assertTrue( "The note was not created when it should", actual>=0);
         }else{
@@ -66,7 +69,7 @@ public class NotesDbAdapterTest extends AndroidTestCase {
     }
 
     private void testUpdateNote(String title, String body, long rowid, boolean result) {
-        final boolean actual = getAdapter().updateNote(rowid, title, body);
+        final boolean actual = getAdapter().updateNote(rowid, title, body, null);
         if(result){
             assertTrue("The note was updated but it shouldn't", actual);
         }else{
@@ -83,7 +86,7 @@ public class NotesDbAdapterTest extends AndroidTestCase {
     }
 
     private long getValidNote(){
-        return getAdapter().createNote("a", "a");
+        return getAdapter().createNote("a", "a", null);
     }
 
 //    private void assertCrash(boolean crash, Runnable runnable){

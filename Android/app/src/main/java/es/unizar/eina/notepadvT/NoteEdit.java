@@ -27,8 +27,6 @@ public class NoteEdit extends AppCompatActivity {
     private EditText mBodyText;
     private AutoCompleteTextView mCategory;
     private Long mRowId;
-    private String title;
-    private String body;
     private NotesDbAdapter mDbHelper;
 
     @Override
