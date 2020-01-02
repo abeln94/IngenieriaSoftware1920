@@ -56,7 +56,6 @@ public class NotesDbAdapter {
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-
             db.execSQL(DATABASE_CREATE_NOTES);
             db.execSQL(DATABASE_CREATE_CATEGORIES);
         }
@@ -96,6 +95,9 @@ public class NotesDbAdapter {
         return this;
     }
 
+    /**
+     * Closes the notes database.
+     */
     public void close() {
         mDbHelper.close();
     }
@@ -108,6 +110,7 @@ public class NotesDbAdapter {
      *
      * @param title the title of the note
      * @param body  the body of the note
+     * @param category the category id (null for no category)
      * @return rowId or -1 if failed
      */
     public long createNote(String title, String body, Integer category) {
@@ -130,9 +133,13 @@ public class NotesDbAdapter {
     }
 
     /**
-     * Return a Cursor over the list of all notes in the database
+     * Return a Cursor over the list of all notes in the database.
+     * Can be sorted by a data column (KEY_TITLE, KEY_CATEGORY, ...)
+     * Can be filtered by category name
      *
-     * @return Cursor over all notes
+     * @param orderBy if null not ordered. if not, order by that column name
+     * @param category if null show all, if not, show only notes with that category name (not id)
+     * @return a cursor with the notes
      */
     public Cursor fetchAllNotes(String orderBy, String category) {
 //        if (category != null) {
@@ -229,14 +236,13 @@ public class NotesDbAdapter {
     }
 
     /**
-     * Return a Cursor positioned at the note that matches the given rowId
+     * Return a Cursor positioned at the category that matches the given rowId
      *
      * @param rowId id of note to retrieve
      * @return Cursor positioned to matching note, if found
      * @throws SQLException if note could not be found/retrieved
      */
     public Cursor fetchCategory(long rowId) throws SQLException {
-
         Cursor mCursor =
                 mDb.query(true, DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID,
                                 KEY_NAME}, KEY_ROWID + "=" + rowId, null,
@@ -248,6 +254,14 @@ public class NotesDbAdapter {
     }
 
 
+    /**
+     * Return a Cursor positioned at the category that matches the given name
+     * If no category with that name is found, one is created
+     * If null or empty string is passed, null is returned
+     *
+     * @param name name of category to retrieve
+     * @return Cursor positioned to matching category (if not found is created first) or null if empty/null category
+     */
     public Integer fetchCategory(String name) {
         if (name == null || name.isEmpty()) return null;
 
