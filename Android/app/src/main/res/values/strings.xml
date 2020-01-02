@@ -13,4 +13,9 @@
     <string name="edit_note">Edit Note</string>
     <string name="title_activity_note_edit">EditNote</string>
     <string name="id">ID</string>
+    <string name="sort_by">Sort by</string>
+    <string name="sort_none">None</string>
+    <string name="sort_title">Title</string>
+    <string name="sort_category">Category</string>
+    <string name="filter_by">Filter by</string>
 </resources>
