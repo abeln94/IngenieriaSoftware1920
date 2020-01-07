@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Actualizar nota" version="4">
   <OBJECT>
     <ID name="Actualizar nota" mc="Standard.Interaction" uid="89fc25e4-0d98-4050-975c-5f70180cb161"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Actualizar nota]]></ATT>
@@ -33,11 +33,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="62a7bb5f-d59d-43b8-b612-4ea1749bbb27"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="editNote" mc="Standard.Operation" uid="303114a4-da04-4649-b0e9-bfcf9d4d146f"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -180,11 +175,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="979607c3-2e99-448e-b83c-8dcee7dfb07e"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="NotesDbAdapter" mc="Standard.Operation" uid="32a21cca-2f7e-4685-80a2-18fe868b2927"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -235,11 +225,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="d3ca4027-da02-4050-983e-eecb60ca941d"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="open" mc="Standard.Operation" uid="6940d3fc-d599-4dea-8e2c-b5848f1afab4"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -288,11 +273,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="f5a84143-0e44-4f90-9f27-ea5ab64805a3"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="onCreate" mc="Standard.Operation" uid="09c9db88-346f-44ec-8176-d41474e363d3"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -420,11 +400,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="bfce7594-f959-4097-ab5d-4c6684e10d57"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="onResume" mc="Standard.Operation" uid="86fec0fe-a9a2-4703-a731-a8192958973c"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -550,11 +525,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="03e8e056-9e01-45d0-8ddd-ded96d6a23e4"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="populateFields" mc="Standard.Operation" uid="e548804e-094b-4bbb-bab4-714d16bb5627"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -678,11 +648,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7b482038-1d9a-451e-84a5-3f2864ef5c97"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="fetchNote" mc="Standard.Operation" uid="7feefef2-e3c2-4463-b8f7-33c5a528048b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -860,11 +825,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="48b0cb94-accb-446a-8113-71abd62ba60f"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="getWritableDatabase" mc="Standard.Operation" uid="337f1ba4-7508-4767-8c2c-11e40212a847"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -1038,11 +998,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="b2aa86bb-2092-4dcb-97f0-545fa93052c7"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="query" mc="Standard.Operation" uid="c892158d-5dce-4228-8bee-5628c2833cf7"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1545,11 +1500,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="1f4af30b-27a0-46b5-9374-6a5eea90f1c1"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="update" mc="Standard.Operation" uid="87384e89-8e55-47ed-acc1-f379812ebcf4"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -1673,11 +1623,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6bb959d9-0d62-4fae-acc7-e49b8ea979c0"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="updateNote" mc="Standard.Operation" uid="2c12bc50-ed24-4942-bebd-b9dbd54fa2e7"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -2010,7 +1955,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="RefersTo">
-              <ID name="fillData()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
+              <ID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -2161,11 +2106,7 @@
                   <ATT name="Name"><![CDATA[r]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r1" mc="Standard.BindableInstance" uid="bca5daf7-1c96-45d5-acc9-163b3d0d9a66"/>
@@ -2177,11 +2118,7 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="0acc6c02-2d72-4558-a2a8-f09b8c9d4e83"/>
@@ -2193,11 +2130,7 @@
                   <ATT name="Name"><![CDATA[r2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r3" mc="Standard.BindableInstance" uid="45901728-03ea-410a-8b8f-246b360fc1bd"/>
@@ -2225,11 +2158,7 @@
                   <ATT name="Name"><![CDATA[r4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r5" mc="Standard.BindableInstance" uid="13fd2448-d210-44c7-800a-56872e35c583"/>
@@ -2241,11 +2170,7 @@
                   <ATT name="Name"><![CDATA[r5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r6" mc="Standard.BindableInstance" uid="433aa303-fe0d-4b92-ad7c-8ea39bf31f2e"/>
@@ -2273,11 +2198,7 @@
                   <ATT name="Name"><![CDATA[r7]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="NoteEdit" mc="Standard.Class" uid="d3b01e72-8b3e-4d6d-af1d-42073bb5ff9d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r8" mc="Standard.BindableInstance" uid="afda261e-db15-4b10-b223-d49777dad8d7"/>
@@ -2289,11 +2210,7 @@
                   <ATT name="Name"><![CDATA[r8]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="DatabaseHelper" mc="Standard.Class" uid="83ebb0cc-0549-4c35-99bf-cb54252f016d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r9" mc="Standard.BindableInstance" uid="c1f1bd6f-6992-400a-a3db-4ea18a67aa02"/>

@@ -13,38 +13,17 @@
     <DEPENDENCIES>
       <LINK relation="Represented">
         <ID name="SendAbstraction" mc="Standard.Class" uid="71c6abf9-8e0b-4865-8f75-6f16a1385b6b"/>
-        <ID name="SendAbstractionImpl" mc="Standard.Class" uid="bf566221-7400-4928-93f5-cf8143772e65"/>
         <ID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
         <ID name="MailImplementor" mc="Standard.Class" uid="ee139e6c-ab67-4a16-a53d-f3feb844f9b9"/>
         <ID name="SMSImplementor" mc="Standard.Class" uid="b9486eb6-c89e-478b-91ae-65440b2515a3"/>
-        <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
-        <ID name="DatabaseHelper" mc="Standard.Class" uid="83ebb0cc-0549-4c35-99bf-cb54252f016d"/>
         <REFOBJ>
           <ID name="send" mc="Standard.Operation" uid="b7ee98f7-ce6b-4329-9d85-cdb6ef8527ca"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="Generalization" mc="Standard.Generalization" uid="6983c616-8db1-4dc6-a8c6-781bc36314ba"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="Implementor" mc="Standard.AssociationEnd" uid="8222aa38-7ddf-4151-9584-4e87a66103b7"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="155059e5-724b-4bfc-9dfe-7e9f3f44126f"/>
         </REFOBJ>
         <REFOBJ>
           <ID name="Generalization" mc="Standard.Generalization" uid="c1ca3782-d0ef-4415-ae2a-5371d5043854"/>
         </REFOBJ>
         <REFOBJ>
           <ID name="Generalization" mc="Standard.Generalization" uid="cd66ed46-6896-4bce-a418-c7bee546a4d8"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="7ddbeac7-80c1-420c-a247-5692a3c75ad7"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="0d8eff68-b455-4c12-b3cf-209ba2a26545"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="SendAbstractionImpl" mc="Standard.Operation" uid="674dbbc2-4232-4508-91bf-65e65ad4d869"/>
         </REFOBJ>
         <REFOBJ>
           <ID name="TYPES" mc="Standard.Attribute" uid="dd3f5a58-023d-47ab-9638-21648317ef66"/>

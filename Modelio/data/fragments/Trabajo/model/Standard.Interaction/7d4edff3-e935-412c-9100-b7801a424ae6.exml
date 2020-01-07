@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Crear categoria" version="4">
   <OBJECT>
     <ID name="Crear categoria" mc="Standard.Interaction" uid="7d4edff3-e935-412c-9100-b7801a424ae6"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Crear categoria]]></ATT>
@@ -33,11 +33,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6ed47d17-0dcd-4f53-822b-707007d12890"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="createCategory" mc="Standard.Operation" uid="ba46ecc1-6578-4292-a2ee-f2b1decd0c2b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -125,11 +120,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="e04b2c2e-b537-4900-8a8c-c81612f31df6"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="createCategory" mc="Standard.Operation" uid="1e2e4b58-17c6-472d-ab9c-79a1144a6f6c"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -178,11 +168,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="f05cb369-9beb-4440-a0a7-d2622139ffb1"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="insert" mc="Standard.Operation" uid="dc58b4fe-6619-4c0f-b8cd-39f609f4cdc2"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -815,7 +800,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="RefersTo">
-              <ID name="fillData()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
+              <ID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
@@ -968,11 +953,7 @@
                   <ATT name="Name"><![CDATA[r]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r1" mc="Standard.BindableInstance" uid="582b354e-ba00-4362-8957-ff34e1b855a2"/>
@@ -984,11 +965,7 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="5950b62c-b728-40f7-bec6-a48d4b22b787"/>
@@ -1016,11 +993,7 @@
                   <ATT name="Name"><![CDATA[r3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r4" mc="Standard.BindableInstance" uid="38bbf2a6-72fd-4233-8acd-825113a3e65e"/>
@@ -1032,11 +1005,7 @@
                   <ATT name="Name"><![CDATA[r4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r5" mc="Standard.BindableInstance" uid="f923aff4-fa00-4b7b-b0c6-40cc3a7a0439"/>
@@ -1048,11 +1017,7 @@
                   <ATT name="Name"><![CDATA[r5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r6" mc="Standard.BindableInstance" uid="51336ed5-ba8f-4b54-9ceb-22fe78b76639"/>
@@ -1080,11 +1045,7 @@
                   <ATT name="Name"><![CDATA[r7]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="ListView" mc="Standard.Class" uid="c33b7cb7-b123-4382-95cd-98bdd82fc47e"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>

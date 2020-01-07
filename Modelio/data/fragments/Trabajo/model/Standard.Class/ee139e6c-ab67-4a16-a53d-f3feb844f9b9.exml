@@ -46,11 +46,7 @@
                   <ATT name="Name"><![CDATA[source]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Type">
-                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>
@@ -75,11 +71,7 @@
             <ATT name="Name"><![CDATA[sourceActivity]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Type">
-              <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
-            </LINK>
-          </DEPENDENCIES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Parent">

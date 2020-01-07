@@ -1,5 +1,16 @@
-#Sat Dec 21 18:00:49 CET 2019
-org.modelio.model.search.SearchHistory1=mdbH
+#Tue Jan 07 19:58:54 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams9='Consultar lista de notas ya existentes(Analisis)' {d356c3a4-17d5-4166-9348-9d6f46fa562e} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams8='fecthAllNotes()' {888a248f-4f81-4024-a2aa-40eafdbab95c} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Actualizar nota(Analisis)' {ff1f0765-5ec8-40a3-b2bc-c292b03a99d0} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Borrar nota(Analisis)' {313430ba-7c6a-4132-8fcf-f96cd98c835c} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Crear nota(Analisis)' {0069fb76-6bf0-400d-ba44-720a7a46f04a} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Diagrama de clases analisis' {13717d14-9ce6-4eda-b385-794e8211e818} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Inicializacion de la aplicacion(Analisis)' {140e517a-881d-4d0e-a636-c333d794b273} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams13='Asignar categoria(Analisis)' {841891bd-2dbc-4b1b-b3a8-b868bee9d400} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams2='Trabajo Class diagram' {8042f457-3267-4422-ade7-cc8b4d3f3bd2} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams12='Eliminar categoria(Analisis)' {9f635504-24b0-4fe8-a1f4-da20c0e7602e} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams1='Enviar nota' {32173c34-8ee6-4f5b-92b8-0d8e4261e1fb} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams11='Modificar categoria(Analisis)' {dec46bc4-23eb-4a10-90e6-0b88f75e9e23} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Diagrama casos de uso' {0f6f94d1-2235-4c69-88d7-5adb702540f5} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Crear categoria(Analisis)' {b350bb56-4f58-437b-ac38-11c9b6aa5528} Standard.SequenceDiagram
+org.modelio.model.search.SearchHistory1=mdbH

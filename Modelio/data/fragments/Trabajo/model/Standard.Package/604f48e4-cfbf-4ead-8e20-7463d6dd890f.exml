@@ -15,7 +15,6 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="sqlite" mc="Standard.Package" uid="2289afd7-3025-4f06-9fcf-8c5e34d30bbb"/>
-        <COMPID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

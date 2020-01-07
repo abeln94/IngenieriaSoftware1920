@@ -12,10 +12,6 @@
       <ATT name="Name"><![CDATA[support.v7.app]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
-    <DEPENDENCIES>
-      <COMP relation="OwnedElement">
-        <COMPID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
-      </COMP>
-    </DEPENDENCIES>
+    <DEPENDENCIES></DEPENDENCIES>
   </OBJECT>
 </EXT>

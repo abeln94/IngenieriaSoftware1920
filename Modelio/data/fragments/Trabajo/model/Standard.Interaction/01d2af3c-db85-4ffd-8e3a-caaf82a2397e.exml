@@ -35,11 +35,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5e00e984-b136-457d-a93f-c13ce269ae2c"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="sendNoteByEmail" mc="Standard.Operation" uid="fcad4275-8099-4120-80b2-abd248b08037"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -138,11 +133,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="456743a9-8dce-42a4-bb0c-8fcf19686b6e"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="fetchNote" mc="Standard.Operation" uid="7feefef2-e3c2-4463-b8f7-33c5a528048b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -976,11 +966,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="49cd782d-ceed-47eb-9ae3-1ec0775fda79"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="sendNoteBySms" mc="Standard.Operation" uid="d712a31c-7a0c-44b9-854d-7adde55e1b1e"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -1079,11 +1064,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="8f9330fb-aaf4-4ecd-a8a5-dc20c8bef8ac"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="fetchNote" mc="Standard.Operation" uid="7feefef2-e3c2-4463-b8f7-33c5a528048b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1474,11 +1454,6 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="d5ca2fa2-9187-4368-8618-9c98cf0201a9"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="startActivity" mc="Standard.Operation" uid="9ce1ab3c-71d5-4125-9ad4-6be9829f1876"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1911,11 +1886,6 @@
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="766184a9-e5be-4ee7-8555-e1cc9bdf25ac"/>
                     </REFOBJ>
                   </LINK>
-                  <LINK relation="Invoked">
-                    <REFOBJ>
-                      <ID name="startActivity" mc="Standard.Operation" uid="9ce1ab3c-71d5-4125-9ad4-6be9829f1876"/>
-                    </REFOBJ>
-                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
@@ -2164,11 +2134,7 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="NotesDbAdapter" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="ef4d8dd0-848b-435c-976f-e49c35a539b3"/>
@@ -2180,11 +2146,7 @@
                   <ATT name="Name"><![CDATA[r2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r3" mc="Standard.BindableInstance" uid="60d9e6b1-1abb-4694-b3d9-7e2630719450"/>
@@ -2196,11 +2158,7 @@
                   <ATT name="Name"><![CDATA[r3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="SendAbstractionImpl" mc="Standard.Class" uid="bf566221-7400-4928-93f5-cf8143772e65"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r4" mc="Standard.BindableInstance" uid="10e50489-85c8-44de-8c84-5dcdc38758c3"/>
@@ -2228,11 +2186,7 @@
                   <ATT name="Name"><![CDATA[r5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="Base">
-                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
-                  </LINK>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r6" mc="Standard.BindableInstance" uid="e898aec0-9ad7-4520-9080-da5ed8f7226c"/>
