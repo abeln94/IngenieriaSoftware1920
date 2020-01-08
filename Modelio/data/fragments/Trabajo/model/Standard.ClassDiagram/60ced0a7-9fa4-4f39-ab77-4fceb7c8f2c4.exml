@@ -14,14 +14,21 @@
       <LINK relation="Represented">
         <ID name="android" mc="Standard.Package" uid="88ae3eb2-3ed2-42e2-a22a-0714c73d571c"/>
         <ID name="view" mc="Standard.Package" uid="7d2d00c2-bfe5-4fdb-a258-48f228ecefe1"/>
+        <ID name="Menu" mc="Standard.Class" uid="ec2966db-f95f-4f2b-99d8-e2963fe219d3"/>
         <ID name="database" mc="Standard.Package" uid="604f48e4-cfbf-4ead-8e20-7463d6dd890f"/>
         <ID name="sqlite" mc="Standard.Package" uid="2289afd7-3025-4f06-9fcf-8c5e34d30bbb"/>
+        <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+        <ID name="SQLiteOpenHelper" mc="Standard.Class" uid="56ebe7fb-2e19-4fe6-8644-5b5dcc6d4efd"/>
+        <ID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
         <ID name="widget" mc="Standard.Package" uid="9f13c741-6546-4cef-8c65-9c85e88885c1"/>
+        <ID name="ListView" mc="Standard.Class" uid="c33b7cb7-b123-4382-95cd-98bdd82fc47e"/>
         <ID name="SimpleCursorAdapter" mc="Standard.Class" uid="08d6e525-cf92-4d8a-aa47-c3fea7beb47a"/>
         <ID name="TextView" mc="Standard.Class" uid="fb268705-5fd6-4bba-a612-e8bacfb6098a"/>
         <ID name="content" mc="Standard.Package" uid="abd8c6e0-0cb2-4d35-afb8-8bb3e24ecbb8"/>
         <ID name="ContentValues" mc="Standard.Class" uid="031e151e-1047-4c14-8193-455e65d97e97"/>
+        <ID name="Context" mc="Standard.Class" uid="548997de-4905-4031-bb00-64180de0adfc"/>
         <ID name="support.v7.app" mc="Standard.Package" uid="f3002e25-8c45-43ba-a6d4-1e492c327e6a"/>
+        <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
       </LINK>
       <COMP relation="Descriptor">
         <OBJECT>

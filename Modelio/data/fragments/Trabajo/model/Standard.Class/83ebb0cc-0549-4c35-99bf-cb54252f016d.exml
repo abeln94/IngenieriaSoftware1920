@@ -1,23 +1,23 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SendImplementor" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="DatabaseHelper" version="4">
   <OBJECT>
-    <ID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
-    <PID name="send" mc="Standard.Package" uid="8b00dc7a-737f-4b1d-a8d5-3e48d565cef6"/>
+    <ID name="DatabaseHelper" mc="Standard.Class" uid="83ebb0cc-0549-4c35-99bf-cb54252f016d"/>
+    <PID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
       <ATT name="IsElementary">false</ATT>
-      <ATT name="IsAbstract">true</ATT>
+      <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[SendImplementor]]></ATT>
+      <ATT name="Name"><![CDATA[DatabaseHelper]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="setSourceActivity" mc="Standard.Operation" uid="1a274143-981e-4648-ac31-32fbf67c6bce"/>
+          <ID name="DatabaseHelper" mc="Standard.Operation" uid="dd3d674f-ece9-48cb-bcd5-1549cd91feed"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -25,13 +25,13 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[setSourceActivity]]></ATT>
+            <ATT name="Name"><![CDATA[DatabaseHelper]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="IO">
               <OBJECT>
-                <ID name="source" mc="Standard.Parameter" uid="02ccf3c8-4635-485c-9077-0f016f7c887d"/>
+                <ID name="context" mc="Standard.Parameter" uid="572bfd22-d512-4c56-9e8a-d9b14ad5d0bc"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -43,12 +43,12 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[source]]></ATT>
+                  <ATT name="Name"><![CDATA[context]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
+                    <ID name="Context" mc="Standard.Class" uid="548997de-4905-4031-bb00-64180de0adfc"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -56,7 +56,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="getSourceActivity" mc="Standard.Operation" uid="89b51d98-3706-490d-b249-6b82dbce5b19"/>
+          <ID name="onCreate" mc="Standard.Operation" uid="242c1b97-4863-48e7-9d1b-11570ad00a0a"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -64,13 +64,13 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[getSourceActivity]]></ATT>
+            <ATT name="Name"><![CDATA[onCreate]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <COMP relation="Return">
+            <COMP relation="IO">
               <OBJECT>
-                <ID name="" mc="Standard.Parameter" uid="05603a5b-33d7-4654-9785-6bd73c37d072"/>
+                <ID name="db" mc="Standard.Parameter" uid="9ae938f9-8b04-44f0-b04a-2f613ddd37ee"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -82,12 +82,12 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[db]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <ID name="AppCompatActivity" mc="Standard.Class" uid="074fc687-8066-4b17-abb0-b85a753ae098"/>
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -95,7 +95,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="send" mc="Standard.Operation" uid="1ffe9aa6-94e3-4c65-9585-ba74a53ab117"/>
+          <ID name="onUpgrade" mc="Standard.Operation" uid="d9ce1533-33fb-4d03-ae75-a363f5746b64"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -103,13 +103,13 @@
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[send]]></ATT>
+            <ATT name="Name"><![CDATA[onUpgrade]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="IO">
               <OBJECT>
-                <ID name="subject" mc="Standard.Parameter" uid="0fcf1be2-ed0d-41cc-b904-b0a241b28280"/>
+                <ID name="db" mc="Standard.Parameter" uid="40b899d5-c6e4-4b13-89e6-243a8b2c63d0"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -121,17 +121,17 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[subject]]></ATT>
+                  <ATT name="Name"><![CDATA[db]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="body" mc="Standard.Parameter" uid="9d50ec7b-4531-4748-ac62-e60590036135"/>
+                <ID name="oldVersion" mc="Standard.Parameter" uid="716f8714-d105-411b-a5ee-6af60eade053"/>
                 <ATTRIBUTES>
                   <ATT name="ParameterPassing">In</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -143,12 +143,34 @@
                   <ATT name="IsException">false</ATT>
                   <ATT name="IsStream">false</ATT>
                   <ATT name="Effect">ReadEffect</ATT>
-                  <ATT name="Name"><![CDATA[body]]></ATT>
+                  <ATT name="Name"><![CDATA[oldVersion]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Type">
-                    <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+                    <FOREIGNID name="integer" mc="Standard.DataType" uid="00000004-0000-0009-0000-000000000000"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="newVersion" mc="Standard.Parameter" uid="89053403-3cb9-41e7-bfdf-7eb8ef5d6ba6"/>
+                <ATTRIBUTES>
+                  <ATT name="ParameterPassing">In</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="TypeConstraint"></ATT>
+                  <ATT name="DefaultValue"></ATT>
+                  <ATT name="IsOrdered">false</ATT>
+                  <ATT name="IsUnique">false</ATT>
+                  <ATT name="IsException">false</ATT>
+                  <ATT name="IsStream">false</ATT>
+                  <ATT name="Effect">ReadEffect</ATT>
+                  <ATT name="Name"><![CDATA[newVersion]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <FOREIGNID name="integer" mc="Standard.DataType" uid="00000004-0000-0009-0000-000000000000"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -156,28 +178,17 @@
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
-      <COMP relation="OwnedAttribute">
+      <COMP relation="Parent">
         <OBJECT>
-          <ID name="TYPES" mc="Standard.Attribute" uid="dd3f5a58-023d-47ab-9638-21648317ef66"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="00fc3318-ff50-4a76-8a18-92fe79afffc0"/>
           <ATTRIBUTES>
-            <ATT name="TypeConstraint"></ATT>
-            <ATT name="Value"></ATT>
-            <ATT name="TargetIsClass">false</ATT>
-            <ATT name="Changeable">ReadWrite</ATT>
-            <ATT name="IsDerived">false</ATT>
-            <ATT name="IsOrdered">false</ATT>
-            <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
-            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
-            <ATT name="Visibility">Public</ATT>
-            <ATT name="IsClass">false</ATT>
-            <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[TYPES]]></ATT>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Type">
-              <ID name="enum" mc="Standard.DataType" uid="86766ee8-e6a2-45a6-8197-64393e64aedb"/>
+            <LINK relation="SuperType">
+              <ID name="SQLiteOpenHelper" mc="Standard.Class" uid="56ebe7fb-2e19-4fe6-8644-5b5dcc6d4efd"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

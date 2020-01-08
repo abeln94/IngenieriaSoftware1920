@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Nota" version="4">
   <OBJECT>
-    <ID name="Nota" mc="Standard.Class" uid="0399d9c7-c876-4fa0-9b9b-d329bf5eb1e0"/>
+    <ID name="Nota" mc="Standard.Class" uid="2000dfe9-0aa4-42b1-b905-24d67e4dfff6"/>
     <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="getTitulo" mc="Standard.Operation" uid="953ee2ee-de74-49f8-aa58-168ff30ea163"/>
+          <ID name="getTitulo" mc="Standard.Operation" uid="4cfb551b-bd7b-4a6a-92a2-029534e3a4da"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -31,7 +31,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="getCuerpo" mc="Standard.Operation" uid="fa1570c2-940d-4b70-8917-80a0512aeabc"/>
+          <ID name="getCuerpo" mc="Standard.Operation" uid="a574ae4c-d010-4473-bd44-7cb73bab574b"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -45,7 +45,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="setTitulo" mc="Standard.Operation" uid="67e597d8-52b0-4b3d-a70d-f9d51cb84474"/>
+          <ID name="setTitulo" mc="Standard.Operation" uid="690f9eb5-2c90-4ff7-8ee3-5109b6a9cb64"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -59,7 +59,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="setCuerpo" mc="Standard.Operation" uid="a79d7300-14ab-4ee9-8118-076e5fec6290"/>
+          <ID name="setCuerpo" mc="Standard.Operation" uid="c4ae8f89-4998-4f27-b44a-6981b582a635"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -73,7 +73,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="mostrar" mc="Standard.Operation" uid="4dd56642-e5bd-4883-86b7-790fca145496"/>
+          <ID name="mostrar" mc="Standard.Operation" uid="7acc7846-3bef-4c54-aec3-97d91a14967e"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -87,7 +87,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="guardar" mc="Standard.Operation" uid="e4d9a5f6-642a-48ec-979a-a8e5fc1c87dc"/>
+          <ID name="guardar" mc="Standard.Operation" uid="24e5b425-4fcc-454a-be39-d1a98e46f844"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -103,7 +103,7 @@
       </COMP>
       <COMP relation="OwnedAttribute">
         <OBJECT>
-          <ID name="Titulo" mc="Standard.Attribute" uid="fb85563d-de37-4747-9090-889f6e572d1f"/>
+          <ID name="Titulo" mc="Standard.Attribute" uid="65bc98b0-c8b0-4e83-8eea-105b3229436f"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>
@@ -127,7 +127,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Cuerpo" mc="Standard.Attribute" uid="3fe97790-5fbc-49c2-9324-5126e86f140b"/>
+          <ID name="Cuerpo" mc="Standard.Attribute" uid="68c9d244-875d-4562-896e-b9017afb057c"/>
           <ATTRIBUTES>
             <ATT name="TypeConstraint"></ATT>
             <ATT name="Value"></ATT>

@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="ContentValues" mc="Standard.Class" uid="031e151e-1047-4c14-8193-455e65d97e97"/>
+        <COMPID name="Context" mc="Standard.Class" uid="548997de-4905-4031-bb00-64180de0adfc"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

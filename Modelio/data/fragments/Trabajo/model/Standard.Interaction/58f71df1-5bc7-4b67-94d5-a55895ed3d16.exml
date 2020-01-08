@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Borrar nota" version="4">
   <OBJECT>
     <ID name="Borrar nota" mc="Standard.Interaction" uid="58f71df1-5bc7-4b67-94d5-a55895ed3d16"/>
-    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Borrar nota]]></ATT>
@@ -33,6 +33,11 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="bf4997d5-a9fc-466c-b6b7-18a31a154080"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="deleteNote" mc="Standard.Operation" uid="55d54549-a8df-41e2-b467-6f4d422ae969"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -118,6 +123,11 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="c52d9268-1b60-4ed8-8b4b-88571b52407d"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="delete" mc="Standard.Operation" uid="a7198720-a4ed-4060-beb7-2425044020f8"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -370,7 +380,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="RefersTo">
-              <ID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
+              <ID name="fillData()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -446,7 +456,11 @@
                   <ATT name="Name"><![CDATA[r]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r1" mc="Standard.BindableInstance" uid="bce72925-380b-46ca-ab55-34c269b8d239"/>
@@ -458,7 +472,11 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="fcb348df-ebe0-436d-bf25-495e11c7eaba"/>
@@ -470,7 +488,11 @@
                   <ATT name="Name"><![CDATA[r2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r3" mc="Standard.BindableInstance" uid="bbf62a37-55ea-41bb-ac49-2abc79bfe682"/>
@@ -498,7 +520,11 @@
                   <ATT name="Name"><![CDATA[r4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r5" mc="Standard.BindableInstance" uid="832dd484-bc8f-495f-bf76-56750ba201fb"/>
@@ -510,7 +536,11 @@
                   <ATT name="Name"><![CDATA[r5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Cursor" mc="Standard.Class" uid="7bce3746-a775-4665-9688-4d647ddc1a22"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>

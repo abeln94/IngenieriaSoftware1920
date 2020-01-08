@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Sistema" version="4">
   <OBJECT>
-    <ID name="Sistema" mc="Standard.Class" uid="4cd05645-78e1-4ba7-a9ad-86a95d5935c0"/>
+    <ID name="Sistema" mc="Standard.Class" uid="249bd315-ce5a-4837-9b78-be832812354f"/>
     <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedOperation">
         <OBJECT>
-          <ID name="guardarNotas" mc="Standard.Operation" uid="1752fd51-5e2f-4575-ba51-cd97bf56b4ef"/>
+          <ID name="guardarNotas" mc="Standard.Operation" uid="3c29a878-6417-4340-9821-0817d82d93fb"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -31,7 +31,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="obtnerNotas" mc="Standard.Operation" uid="232fd972-83be-4a0b-9865-5f1f5d459634"/>
+          <ID name="obtnerNotas" mc="Standard.Operation" uid="504efb70-d4ad-4f2b-b88b-0f6072d2c5f3"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -45,7 +45,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="guardarNota" mc="Standard.Operation" uid="b3530cf1-0d69-4cc4-930b-cc758a72497b"/>
+          <ID name="guardarNota" mc="Standard.Operation" uid="fb11dd42-ca0d-4db9-b55a-f9b458d57483"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -59,7 +59,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="borrarNota" mc="Standard.Operation" uid="a0bced2e-0523-46b3-b66e-6c93b62df049"/>
+          <ID name="borrarNota" mc="Standard.Operation" uid="a52aaa5b-2b7c-46a8-bb65-311099285122"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>

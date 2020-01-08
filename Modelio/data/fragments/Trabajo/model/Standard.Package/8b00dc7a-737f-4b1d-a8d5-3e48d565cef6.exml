@@ -15,6 +15,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
         <COMPID name="SendAbstraction" mc="Standard.Class" uid="71c6abf9-8e0b-4865-8f75-6f16a1385b6b"/>
+        <COMPID name="SendAbstractionImpl" mc="Standard.Class" uid="bf566221-7400-4928-93f5-cf8143772e65"/>
         <COMPID name="SendImplementor" mc="Standard.Class" uid="84645eae-00de-4321-acbc-1a71ab80bb73"/>
         <COMPID name="MailImplementor" mc="Standard.Class" uid="ee139e6c-ab67-4a16-a53d-f3feb844f9b9"/>
         <COMPID name="SMSImplementor" mc="Standard.Class" uid="b9486eb6-c89e-478b-91ae-65440b2515a3"/>

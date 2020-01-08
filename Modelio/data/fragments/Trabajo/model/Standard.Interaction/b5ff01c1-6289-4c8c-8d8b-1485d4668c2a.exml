@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modificar categoria asignada" version="4">
   <OBJECT>
     <ID name="Modificar categoria asignada" mc="Standard.Interaction" uid="b5ff01c1-6289-4c8c-8d8b-1485d4668c2a"/>
-    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Modificar categoria asignada]]></ATT>
@@ -33,6 +33,11 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="1632bb5f-10e0-4aad-9774-89cc92aec898"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="modifyCategory" mc="Standard.Operation" uid="99827db1-82b4-42a9-805a-3dac27e6a0bc"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -373,6 +378,11 @@
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
                       <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="3acb4375-8cf0-4ae0-9347-ef695860c4c4"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="Invoked">
+                    <REFOBJ>
+                      <ID name="update" mc="Standard.Operation" uid="87384e89-8e55-47ed-acc1-f379812ebcf4"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1062,7 +1072,11 @@
                   <ATT name="Name"><![CDATA[r]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r1" mc="Standard.BindableInstance" uid="0a9ecc08-022d-4018-bd75-bde0857cd084"/>
@@ -1074,7 +1088,11 @@
                   <ATT name="Name"><![CDATA[r1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r2" mc="Standard.BindableInstance" uid="061151c9-9231-425c-90d8-e2d8b43665da"/>
@@ -1086,7 +1104,11 @@
                   <ATT name="Name"><![CDATA[r2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r3" mc="Standard.BindableInstance" uid="30cf01b3-9d31-43cf-9ebc-3406ac56bc63"/>
@@ -1114,7 +1136,11 @@
                   <ATT name="Name"><![CDATA[r4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="r5" mc="Standard.BindableInstance" uid="94adb83d-dda2-4ceb-930a-6fcc1b16e37d"/>
@@ -1126,7 +1152,11 @@
                   <ATT name="Name"><![CDATA[r5]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="SQLiteDatabase" mc="Standard.Class" uid="40ca5e3f-56ca-4b6a-99a3-32d948418900"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
             </COMP>
           </DEPENDENCIES>

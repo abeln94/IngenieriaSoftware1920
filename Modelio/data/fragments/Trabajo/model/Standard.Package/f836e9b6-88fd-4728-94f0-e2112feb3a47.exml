@@ -30,15 +30,15 @@
         <COMPID name="Actualizar nota" mc="Standard.Interaction" uid="89fc25e4-0d98-4050-975c-5f70180cb161"/>
         <COMPID name="fetchAllNotes()" mc="Standard.Interaction" uid="547bcbe7-851d-4b09-a193-949430c8c948"/>
         <COMPID name="Enviar nota" mc="Standard.Interaction" uid="01d2af3c-db85-4ffd-8e3a-caaf82a2397e"/>
-        <COMPID name="Inicializacion de la aplicacion(Analisis)" mc="Standard.Interaction" uid="a37faee4-d6f8-4be9-8185-0dbfce5b4d57"/>
-        <COMPID name="Crear nota (Analisis)" mc="Standard.Interaction" uid="62704c91-7706-405d-bc22-d0686103fbe5"/>
-        <COMPID name="Borrar nota(Analisis)" mc="Standard.Interaction" uid="bfa293c8-133f-4ed9-953a-a1e9595cfdee"/>
-        <COMPID name="Actualizar nota(Analisis)" mc="Standard.Interaction" uid="b63f4e63-2109-4daa-b795-a5573cc010f7"/>
-        <COMPID name="Consultar lista de notas ya existentes(Analisis)" mc="Standard.Interaction" uid="ec8952ac-cd3e-4af3-a843-1fc588f7a065"/>
-        <COMPID name="Crear categoria(Analisis)" mc="Standard.Interaction" uid="05ab5598-fbf0-466d-ba23-25f887387054"/>
-        <COMPID name="Modificar categoria(Analisis)" mc="Standard.Interaction" uid="b1091132-78c1-4dff-8181-2e574e76d4ad"/>
-        <COMPID name="Eliminar categoria(Analisis)" mc="Standard.Interaction" uid="73bf5576-46d9-443b-b7fb-cebf3479adf5"/>
-        <COMPID name="Asignar categoria(Analisis)" mc="Standard.Interaction" uid="ad854fa3-e084-4af4-ad0a-82cd920bd318"/>
+        <COMPID name="Eliminar categoria(Analisis)" mc="Standard.Interaction" uid="c0509513-e197-401b-be59-0c7b3c2a6a7c"/>
+        <COMPID name="Modificar categoria(Analisis)" mc="Standard.Interaction" uid="c06a842e-62c0-44d7-b4e1-5e4bc2265e1c"/>
+        <COMPID name="Actualizar nota(Analisis)" mc="Standard.Interaction" uid="778f2fe4-f102-41e8-af48-1c843b8e1f02"/>
+        <COMPID name="Crear categoria(Analisis)" mc="Standard.Interaction" uid="10d51b69-3d64-4cda-91d9-51f146707973"/>
+        <COMPID name="Crear nota (Analisis)" mc="Standard.Interaction" uid="ed4f808a-c0e2-4b61-a151-036c18a9ffc7"/>
+        <COMPID name="Inicializacion de la aplicacion(Analisis)" mc="Standard.Interaction" uid="58fc6ce6-2cc8-422f-965d-29f4bfcbbd53"/>
+        <COMPID name="Consultar lista de notas ya existentes(Analisis)" mc="Standard.Interaction" uid="9bdbfc29-90eb-4109-85c3-2f36679fa189"/>
+        <COMPID name="Borrar nota(Analisis)" mc="Standard.Interaction" uid="d1b1c0e0-3ed3-4f46-b2db-0c402c7e59e4"/>
+        <COMPID name="Asignar categoria(Analisis)" mc="Standard.Interaction" uid="0f455975-6dda-4ca0-950e-53865c58515d"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Usuario" mc="Standard.Actor" uid="927008b3-4394-4290-80f1-c1acd5dde7bb"/>
@@ -65,10 +65,10 @@
         <COMPID name="appEMAIL.apk" mc="Standard.Artifact" uid="1ac2f7b9-2c41-4c84-87e8-1c4d8b4a9633"/>
         <COMPID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
         <COMPID name="Enviar nota" mc="Standard.UseCase" uid="bad1ea54-df17-4919-9b9a-18d91d32cdf2"/>
-        <COMPID name="Interfaz" mc="Standard.Class" uid="5aac9553-d932-450a-be45-492ba6423972"/>
-        <COMPID name="Sistema" mc="Standard.Class" uid="4cd05645-78e1-4ba7-a9ad-86a95d5935c0"/>
-        <COMPID name="Nota" mc="Standard.Class" uid="0399d9c7-c876-4fa0-9b9b-d329bf5eb1e0"/>
-        <COMPID name="Usuario" mc="Standard.Class" uid="70f8bec5-61bc-4df2-821b-493563118413"/>
+        <COMPID name="Interfaz" mc="Standard.Class" uid="e3a9704c-47d8-4d88-a980-c51da278e6a3"/>
+        <COMPID name="Nota" mc="Standard.Class" uid="2000dfe9-0aa4-42b1-b905-24d67e4dfff6"/>
+        <COMPID name="Sistema" mc="Standard.Class" uid="249bd315-ce5a-4837-9b78-be832812354f"/>
+        <COMPID name="Usuario" mc="Standard.Class" uid="c9e57846-6ff9-4701-91b7-0a6a6a14904e"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>
@@ -77,7 +77,7 @@
         <COMPID name="Diagrama despliegue" mc="Standard.DeploymentDiagram" uid="189503b0-465a-47b4-a10e-8a2bc9f62491"/>
         <COMPID name="Diagrama de componentes" mc="Standard.ClassDiagram" uid="d85c37bd-c4d9-4389-8161-690f2d548111"/>
         <COMPID name="patron bridge" mc="Standard.ClassDiagram" uid="c49472ba-35ce-4ea2-aec5-000414493e38"/>
-        <COMPID name="Diagrama de clases analisis" mc="Standard.ClassDiagram" uid="13717d14-9ce6-4eda-b385-794e8211e818"/>
+        <COMPID name="Diagrama de clases analisis" mc="Standard.ClassDiagram" uid="01295ce4-b332-4ec8-89de-01aea966107f"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

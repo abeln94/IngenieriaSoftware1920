@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Modificar categoria(Analisis)" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Eliminar categoria(Analisis)" version="4">
   <OBJECT>
-    <ID name="Modificar categoria(Analisis)" mc="Standard.Interaction" uid="b1091132-78c1-4dff-8181-2e574e76d4ad"/>
+    <ID name="Eliminar categoria(Analisis)" mc="Standard.Interaction" uid="c0509513-e197-401b-be59-0c7b3c2a6a7c"/>
     <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Modificar categoria(Analisis)]]></ATT>
+      <ATT name="Name"><![CDATA[Eliminar categoria(Analisis)]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Fragment">
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5553fe35-d4fb-4637-b6d8-d526cbb9700c"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="1f23b1a0-259d-43df-9bc0-e69c12f45b06"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">53</ATT>
             <ATT name="Name"></ATT>
@@ -20,19 +20,19 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="modificarCategoria(Nombre)" mc="Standard.Message" uid="14869a88-f3e3-4868-9cce-5b55d7a45b81"/>
+                <ID name="eliminarCategoria(Categoria)" mc="Standard.Message" uid="008181a8-459c-4dcd-917e-6cd80ccb72c8"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
                   <ATT name="Sequence"><![CDATA[1]]></ATT>
-                  <ATT name="Name"><![CDATA[modificarCategoria(Nombre)]]></ATT>
+                  <ATT name="Name"><![CDATA[eliminarCategoria(Categoria)]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="8eb1967f-9185-484f-af0a-129139eb6c59"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6ff87a89-f415-4443-a26c-ab118beb9090"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -40,13 +40,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="" mc="Standard.Lifeline" uid="41bbe5b5-fe7c-46c9-9101-91d0ed11d979"/>
+                <ID name="" mc="Standard.Lifeline" uid="b917c7f8-4136-46de-a0d4-04bac6d39bce"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="8eb1967f-9185-484f-af0a-129139eb6c59"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6ff87a89-f415-4443-a26c-ab118beb9090"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">53</ATT>
             <ATT name="Name"></ATT>
@@ -55,18 +55,18 @@
           <DEPENDENCIES>
             <LINK relation="Started">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="63474e33-1431-40f3-a3cf-0be4eb5e67e1"/>
+                <ID name="" mc="Standard.ExecutionSpecification" uid="b8b242a1-d336-4026-9a7e-034f379edd4e"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6d0ed278-78a9-40b1-919e-2bfef2d48dc0"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4abeb971-fcba-448d-8650-c0cb6bcfea55"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">104</ATT>
             <ATT name="Name"></ATT>
@@ -75,13 +75,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="63474e33-1431-40f3-a3cf-0be4eb5e67e1"/>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="b8b242a1-d336-4026-9a7e-034f379edd4e"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">53</ATT>
             <ATT name="Name"></ATT>
@@ -90,18 +90,18 @@
           <DEPENDENCIES>
             <LINK relation="Finish">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6d0ed278-78a9-40b1-919e-2bfef2d48dc0"/>
+                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4abeb971-fcba-448d-8650-c0cb6bcfea55"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="4364e1bc-49c3-432c-9f6e-4a050f4aa473"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="704b20c2-8824-4cba-83a5-5b9941bb8597"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">98</ATT>
             <ATT name="Name"></ATT>
@@ -110,7 +110,7 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="Aceptar()" mc="Standard.Message" uid="9580d90a-795d-4532-a83a-a1f78d84f766"/>
+                <ID name="Aceptar()" mc="Standard.Message" uid="2f0c5463-780b-403d-aca2-b3ce451a1702"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
@@ -122,7 +122,7 @@
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="cc20ecff-5b9a-44e1-8930-e97e352b6406"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="b9dfcbe6-9c4d-4bfc-9040-fdaca7c295c0"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -130,13 +130,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="" mc="Standard.Lifeline" uid="41bbe5b5-fe7c-46c9-9101-91d0ed11d979"/>
+                <ID name="" mc="Standard.Lifeline" uid="b917c7f8-4136-46de-a0d4-04bac6d39bce"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="cc20ecff-5b9a-44e1-8930-e97e352b6406"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="b9dfcbe6-9c4d-4bfc-9040-fdaca7c295c0"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">98</ATT>
             <ATT name="Name"></ATT>
@@ -145,13 +145,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="55e61b06-bd80-450a-bb9d-ef69698393ac"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5d0cb641-45ce-4972-ace1-8d37e0aaf818"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">100</ATT>
             <ATT name="Name"></ATT>
@@ -160,19 +160,19 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="modificarCategoria(Nombre)" mc="Standard.Message" uid="c3d64131-c917-474f-91b1-9816bd5f4dc2"/>
+                <ID name="eliminarCategoria(Categoria)" mc="Standard.Message" uid="0d101107-660c-4701-8a63-d3ad21d630a1"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
                   <ATT name="SortOfMessage">SyncCall</ATT>
                   <ATT name="Sequence"><![CDATA[3]]></ATT>
-                  <ATT name="Name"><![CDATA[modificarCategoria(Nombre)]]></ATT>
+                  <ATT name="Name"><![CDATA[eliminarCategoria(Categoria)]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="f59f3e76-4078-45fa-9fa6-8300a6152675"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="84573589-159f-491b-a1e1-75b2a34a4407"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -180,13 +180,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="f59f3e76-4078-45fa-9fa6-8300a6152675"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="84573589-159f-491b-a1e1-75b2a34a4407"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">100</ATT>
             <ATT name="Name"></ATT>
@@ -195,18 +195,18 @@
           <DEPENDENCIES>
             <LINK relation="Started">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="619c9fb6-8f74-4b99-b4ce-378215e4be92"/>
+                <ID name="" mc="Standard.ExecutionSpecification" uid="829c07f4-977c-4aa3-80eb-6d89fbd7c80b"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="74593984-45c8-4dba-a693-92ae20f136b6"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fc98c781-3d67-40d0-ac7e-047d6cd8d14b"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">172</ATT>
             <ATT name="Name"></ATT>
@@ -215,7 +215,7 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="" mc="Standard.Message" uid="8806fc6c-aa99-48b1-89b8-df6643183a40"/>
+                <ID name="" mc="Standard.Message" uid="38e97c7b-2cb3-4b23-b77c-1a1fd249f18e"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
@@ -227,7 +227,7 @@
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6e4d0d58-efee-4f06-b4ad-d6606e358a3d"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="12d33eae-562e-4b59-87d2-2dc3d2125309"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -235,13 +235,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="619c9fb6-8f74-4b99-b4ce-378215e4be92"/>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="829c07f4-977c-4aa3-80eb-6d89fbd7c80b"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">100</ATT>
             <ATT name="Name"></ATT>
@@ -250,18 +250,18 @@
           <DEPENDENCIES>
             <LINK relation="Finish">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="74593984-45c8-4dba-a693-92ae20f136b6"/>
+                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fc98c781-3d67-40d0-ac7e-047d6cd8d14b"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="6e4d0d58-efee-4f06-b4ad-d6606e358a3d"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="12d33eae-562e-4b59-87d2-2dc3d2125309"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">172</ATT>
             <ATT name="Name"></ATT>
@@ -270,13 +270,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="96510b21-1bda-41c4-b1ca-263cd52d8666"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="ff48a252-c073-4641-951f-dc138dee5b55"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">169</ATT>
             <ATT name="Name"></ATT>
@@ -285,18 +285,18 @@
           <DEPENDENCIES>
             <LINK relation="Started">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="81f6946a-73d7-427e-a2a6-21ac3dbf6b8a"/>
+                <ID name="" mc="Standard.ExecutionSpecification" uid="f67cf358-9c89-4b9a-9cd3-dd0ac6552c28"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="167c35a6-e10a-47bf-b540-e323cc15aaf9"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5d45ce45-a4b9-4533-af9f-ad095c86697b"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">223</ATT>
             <ATT name="Name"></ATT>
@@ -305,13 +305,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="81f6946a-73d7-427e-a2a6-21ac3dbf6b8a"/>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="f67cf358-9c89-4b9a-9cd3-dd0ac6552c28"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">169</ATT>
             <ATT name="Name"></ATT>
@@ -320,18 +320,18 @@
           <DEPENDENCIES>
             <LINK relation="Finish">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="167c35a6-e10a-47bf-b540-e323cc15aaf9"/>
+                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5d45ce45-a4b9-4533-af9f-ad095c86697b"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="601463ae-a224-4240-ba40-c4bdd3c582aa"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="920b9720-d3af-482b-8325-25eb31151219"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">217</ATT>
             <ATT name="Name"></ATT>
@@ -340,7 +340,7 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="solicitarNotas()" mc="Standard.Message" uid="b9381c4b-a4b3-49b1-9e7f-6e8dce509e68"/>
+                <ID name="solicitarNotas()" mc="Standard.Message" uid="e17b3e0e-8858-4cbc-b547-b1c11d55d707"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
@@ -352,7 +352,7 @@
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7b0ea9b6-117a-477f-b64f-417e654b7dc6"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="12d6c06b-998a-4fa5-9b3c-9abafd996811"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -360,13 +360,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7b0ea9b6-117a-477f-b64f-417e654b7dc6"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="12d6c06b-998a-4fa5-9b3c-9abafd996811"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">217</ATT>
             <ATT name="Name"></ATT>
@@ -375,18 +375,18 @@
           <DEPENDENCIES>
             <LINK relation="Started">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="3a63cba1-0dca-4d48-be51-5c917fd9b698"/>
+                <ID name="" mc="Standard.ExecutionSpecification" uid="adb70056-ef84-40a3-abcd-97f8dfc129c0"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="44822aa5-0844-4302-a404-cba4a6efad87"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="25a69c7c-dd69-472f-af0b-9917d0ee6035"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">278</ATT>
             <ATT name="Name"></ATT>
@@ -395,7 +395,7 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="Notas" mc="Standard.Message" uid="1894b616-ecc8-4b4c-9d1f-0ccfa4999536"/>
+                <ID name="Notas" mc="Standard.Message" uid="06e64ae6-29a5-44dd-a162-778b2fad5bbd"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
@@ -407,7 +407,7 @@
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="82843e56-d541-4c90-bf67-f756b4560936"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="29f8b7c8-7e0b-43c4-9f41-56316f0fb0f1"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -415,13 +415,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="3a63cba1-0dca-4d48-be51-5c917fd9b698"/>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="adb70056-ef84-40a3-abcd-97f8dfc129c0"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">217</ATT>
             <ATT name="Name"></ATT>
@@ -430,18 +430,18 @@
           <DEPENDENCIES>
             <LINK relation="Finish">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="44822aa5-0844-4302-a404-cba4a6efad87"/>
+                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="25a69c7c-dd69-472f-af0b-9917d0ee6035"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+                <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="82843e56-d541-4c90-bf67-f756b4560936"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="29f8b7c8-7e0b-43c4-9f41-56316f0fb0f1"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">278</ATT>
             <ATT name="Name"></ATT>
@@ -450,13 +450,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="80bc27c6-a927-47c7-b31a-b526996dae28"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="30eb85a6-4b8d-401c-943d-01fe4eb743da"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">275</ATT>
             <ATT name="Name"></ATT>
@@ -465,18 +465,18 @@
           <DEPENDENCIES>
             <LINK relation="Started">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="fc38767d-835b-4b5b-aa0e-46ffa293c9c5"/>
+                <ID name="" mc="Standard.ExecutionSpecification" uid="4713d459-0ac0-4dd1-987a-1a8210b3c6f7"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a819ce36-e580-45a4-b0ab-3fe4dd48806d"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="c975ef78-b2cb-48fe-b6d4-55edb7aae7e0"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">321</ATT>
             <ATT name="Name"></ATT>
@@ -485,13 +485,13 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="fc38767d-835b-4b5b-aa0e-46ffa293c9c5"/>
+          <ID name="" mc="Standard.ExecutionSpecification" uid="4713d459-0ac0-4dd1-987a-1a8210b3c6f7"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">275</ATT>
             <ATT name="Name"></ATT>
@@ -500,18 +500,18 @@
           <DEPENDENCIES>
             <LINK relation="Finish">
               <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a819ce36-e580-45a4-b0ab-3fe4dd48806d"/>
+                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="c975ef78-b2cb-48fe-b6d4-55edb7aae7e0"/>
               </REFOBJ>
             </LINK>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7e5d4b72-7a85-43b0-b3ff-af78a6eec7ac"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="b27ca0db-e527-4153-96bc-a9d55d951b72"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">319</ATT>
             <ATT name="Name"></ATT>
@@ -520,7 +520,7 @@
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="mostrarNotas(Notas)" mc="Standard.Message" uid="bd7dc5c7-e44f-452e-9d7b-51f4272434aa"/>
+                <ID name="mostrarNotas(Notas)" mc="Standard.Message" uid="2d6711a3-2488-4014-855f-4006ac327f6e"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
@@ -532,7 +532,7 @@
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7f711b97-b3b1-48e6-9a04-0dbc7b0bfe3a"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fe036122-2864-4d67-b329-f9fe9e5ad9fe"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -540,13 +540,13 @@
             </COMP>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+                <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="7f711b97-b3b1-48e6-9a04-0dbc7b0bfe3a"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fe036122-2864-4d67-b329-f9fe9e5ad9fe"/>
           <ATTRIBUTES>
             <ATT name="LineNumber">319</ATT>
             <ATT name="Name"></ATT>
@@ -555,7 +555,7 @@
           <DEPENDENCIES>
             <LINK relation="Covered">
               <REFOBJ>
-                <ID name="" mc="Standard.Lifeline" uid="41bbe5b5-fe7c-46c9-9101-91d0ed11d979"/>
+                <ID name="" mc="Standard.Lifeline" uid="b917c7f8-4136-46de-a0d4-04bac6d39bce"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -563,7 +563,7 @@
       </COMP>
       <COMP relation="OwnedLine">
         <OBJECT>
-          <ID name="" mc="Standard.Lifeline" uid="41bbe5b5-fe7c-46c9-9101-91d0ed11d979"/>
+          <ID name="" mc="Standard.Lifeline" uid="b917c7f8-4136-46de-a0d4-04bac6d39bce"/>
           <ATTRIBUTES>
             <ATT name="Selector"></ATT>
             <ATT name="Name"></ATT>
@@ -572,13 +572,13 @@
           <DEPENDENCIES>
             <LINK relation="Represented">
               <REFOBJ>
-                <ID name="r" mc="Standard.BindableInstance" uid="43e96013-a76f-4e28-a6cc-edf8d16a7fa4"/>
+                <ID name="r" mc="Standard.BindableInstance" uid="5f4035d9-7481-4c50-8097-1bf8ca6422c4"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Aplicacion" mc="Standard.Lifeline" uid="c5250b59-6944-4c5d-8b7e-883bcdded7c1"/>
+          <ID name="Aplicacion" mc="Standard.Lifeline" uid="f9707ac1-4a98-42c0-b6fc-2778602a557c"/>
           <ATTRIBUTES>
             <ATT name="Selector"></ATT>
             <ATT name="Name"><![CDATA[Aplicacion]]></ATT>
@@ -587,7 +587,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Base de datos" mc="Standard.Lifeline" uid="3e4aaf75-7f85-480f-b02a-3020bc408cdd"/>
+          <ID name="Base de datos" mc="Standard.Lifeline" uid="0a4e2033-5403-406c-a17a-fdfd72e82404"/>
           <ATTRIBUTES>
             <ATT name="Selector"></ATT>
             <ATT name="Name"><![CDATA[Base de datos]]></ATT>
@@ -598,7 +598,7 @@
       </COMP>
       <COMP relation="OwnedCollaboration">
         <OBJECT>
-          <ID name="locals" mc="Standard.Collaboration" uid="6b20b75b-7914-4d6f-90b3-e8087f63c47c"/>
+          <ID name="locals" mc="Standard.Collaboration" uid="41456493-cb8a-45c5-906c-8d9a9943a7f2"/>
           <ATTRIBUTES>
             <ATT name="IsConcurrent">false</ATT>
             <ATT name="IsAbstract">false</ATT>
@@ -611,7 +611,7 @@
           <DEPENDENCIES>
             <COMP relation="Declared">
               <OBJECT>
-                <ID name="r" mc="Standard.BindableInstance" uid="43e96013-a76f-4e28-a6cc-edf8d16a7fa4"/>
+                <ID name="r" mc="Standard.BindableInstance" uid="5f4035d9-7481-4c50-8097-1bf8ca6422c4"/>
                 <ATTRIBUTES>
                   <ATT name="IsConstant">false</ATT>
                   <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
@@ -631,7 +631,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Modificar categoria(Analisis)" mc="Standard.SequenceDiagram" uid="dec46bc4-23eb-4a10-90e6-0b88f75e9e23"/>
+        <COMPID name="Eliminar categoria(Analisis)" mc="Standard.SequenceDiagram" uid="74337ffb-bd4f-4910-b14f-e0f4c6a6016d"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

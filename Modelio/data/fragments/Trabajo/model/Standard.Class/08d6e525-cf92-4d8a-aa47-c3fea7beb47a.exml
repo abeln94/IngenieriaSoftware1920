@@ -46,7 +46,11 @@
                   <ATT name="Name"><![CDATA[context]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <LINK relation="Type">
+                    <ID name="Context" mc="Standard.Class" uid="548997de-4905-4031-bb00-64180de0adfc"/>
+                  </LINK>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="Layout" mc="Standard.Parameter" uid="6c4e5f26-10e2-416e-b833-9acbecefdc54"/>
