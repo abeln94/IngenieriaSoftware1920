@@ -142,7 +142,7 @@ public class NotepadvT extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
         menu.add(Menu.NONE, INSERT_ID, Menu.NONE, R.string.menu_insert);
-        menu.add(Menu.NONE, CATEGORIES_ID, Menu.NONE, "Edit categories"); //TODO: extract resource
+        menu.add(Menu.NONE, CATEGORIES_ID, Menu.NONE, R.string.menu_edit_categories);
         return result;
     }
 

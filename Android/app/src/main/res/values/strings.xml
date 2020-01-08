@@ -18,4 +18,5 @@
     <string name="sort_title">Title</string>
     <string name="sort_category">Category</string>
     <string name="filter_by">Filter by</string>
+    <string name="menu_edit_categories">Edit categories</string>
 </resources>
