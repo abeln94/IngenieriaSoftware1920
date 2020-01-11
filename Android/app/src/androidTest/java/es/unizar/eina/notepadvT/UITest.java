@@ -2,7 +2,6 @@ package es.unizar.eina.notepadvT;
 
 
 import android.app.Activity;
-import android.database.Cursor;
 import android.support.test.espresso.DataInteraction;
 import android.support.test.espresso.action.AdapterViewProtocol;
 import android.support.test.espresso.core.deps.guava.base.Optional;
@@ -89,60 +88,6 @@ public class UITest {
         onLastItemOfListView(withId(R.id.list))
                 .onChildView(withId(R.id.text1))
                 .check(matches(not(withText("note_to_delete"))));
-    }
-
-
-    @Test
-    public void testLotsOfNotesUI() {
-
-        final NotepadvT activity = (NotepadvT) getActivityInstance();
-        final NotesDbAdapter notesDbAdapter = Reflection.getPrivate(activity, "mDbHelper");
-
-        // delete all notes
-        Cursor cursor = notesDbAdapter.fetchAllNotes(null, null);
-        while(cursor.moveToNext()){
-            notesDbAdapter.deleteNote(cursor.getLong(0));
-        }
-
-        // create 1000 notes
-        for (int i = 0; i < 1000; ++i) {
-            notesDbAdapter.createNote("volume_" + i, "n" + i, null);
-        }
-
-        // create and edit one note
-        editNoteTest();
-
-        // edit note 75
-        onData(anything()).inAdapterView(withId(R.id.list)).atPosition(75)
-                .perform(longClick());
-
-        onView(withText("Edit Note"))
-                .perform(click());
-
-        onView(withId(R.id.title))
-                .perform(replaceText("note_75_edited"), closeSoftKeyboard());
-
-        onView(withId(R.id.confirm))
-                .perform(click());
-
-        // edit note 76
-        onData(anything()).inAdapterView(withId(R.id.list)).atPosition(76)
-                .perform(longClick());
-
-        onView(withText("Edit Note"))
-                .perform(click());
-
-        onView(withId(R.id.title))
-                .perform(replaceText("note_76_edited"), closeSoftKeyboard());
-
-        onView(withId(R.id.confirm))
-                .perform(click());
-
-        // delete all notes
-        cursor = notesDbAdapter.fetchAllNotes(null, null);
-        while(cursor.moveToNext()){
-            notesDbAdapter.deleteNote(cursor.getLong(0));
-        }
     }
 
 

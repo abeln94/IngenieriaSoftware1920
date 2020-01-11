@@ -41,6 +41,8 @@ public class NotepadvT extends AppCompatActivity {
     private RadioGroup mSortBy;
     private CheckBox mFilter;
 
+    private int lastItemPosition = 0;
+
 
     /**
      * Called when the activity is first created.
@@ -61,14 +63,14 @@ public class NotepadvT extends AppCompatActivity {
         mFilter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                fillData();
+                fillData(0);
             }
         });
         mCategories.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 if (mFilter.isChecked()) {
-                    fillData();
+                    fillData(0);
                 }
             }
 
@@ -80,11 +82,11 @@ public class NotepadvT extends AppCompatActivity {
         mSortBy.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                fillData();
+                fillData(0);
             }
         });
 
-        fillData();
+        fillData(0);
         fillCategories();
 
         registerForContextMenu(mList);
@@ -94,7 +96,7 @@ public class NotepadvT extends AppCompatActivity {
     /**
      * Populates the list with the notes
      */
-    private void fillData() {
+    private void fillData(int scrollTo) {
         // Get all of the notes from the database and create the item list
         String category = null;
         if (mFilter.isChecked()) {
@@ -123,6 +125,8 @@ public class NotepadvT extends AppCompatActivity {
         SimpleCursorAdapter notes =
                 new SimpleCursorAdapter(this, R.layout.notes_row, mNotesCursor, from, to);
         mList.setAdapter(notes);
+
+        mList.setSelection(scrollTo);
     }
 
     private void fillCategories() {
@@ -175,7 +179,7 @@ public class NotepadvT extends AppCompatActivity {
             case DELETE_ID:
                 AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
                 mDbHelper.deleteNote(info.id);
-                fillData();
+                fillData(info.position - 1);
                 return true;
             case EDIT_ID:
                 info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
@@ -200,6 +204,8 @@ public class NotepadvT extends AppCompatActivity {
     private void createNote() {
         Intent i = new Intent(this, NoteEdit.class);
         startActivityForResult(i, ACTIVITY_CREATE);
+
+        lastItemPosition = mList.getCount();
     }
 
     /**
@@ -211,6 +217,8 @@ public class NotepadvT extends AppCompatActivity {
         Intent i = new Intent(this, NoteEdit.class);
         i.putExtra(NotesDbAdapter.KEY_ROWID, id);
         startActivityForResult(i, ACTIVITY_EDIT);
+
+        lastItemPosition = position;
     }
 
 
@@ -221,7 +229,7 @@ public class NotepadvT extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         super.onActivityResult(requestCode, resultCode, intent);
-        fillData();
+        fillData(lastItemPosition);
         fillCategories();
     }
 }
