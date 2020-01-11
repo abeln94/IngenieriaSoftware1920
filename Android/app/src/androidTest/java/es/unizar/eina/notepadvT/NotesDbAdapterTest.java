@@ -4,8 +4,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 
-import java.lang.reflect.Field;
-
 public class NotesDbAdapterTest extends AndroidTestCase {
 
     // ------------------- Tests -------------------
@@ -160,6 +158,22 @@ public class NotesDbAdapterTest extends AndroidTestCase {
         testUpdateCategory(getValidCategoryId(), "", false);
     }
 
+    public void testLotsOfNotesValid1() {
+        testLotsOfNotes(50, 1);
+    }
+
+    public void testLotsOfNotesValid2() {
+        testLotsOfNotes(1000, 1);
+    }
+
+    public void testLotsOfNotesInValid1() {
+        testLotsOfNotes(1001, 1);
+    }
+
+    public void testLotsOfNotesInValid2() {
+        testLotsOfNotes(1050, 1);
+    }
+
     // ------------------- TestManagers -------------------
 
     private void testCreateNote(String title, String body, Integer category, long result) {
@@ -213,7 +227,7 @@ public class NotesDbAdapterTest extends AndroidTestCase {
         if (result >= 0) {
             assertTrue("The category was not created when it should", actual >= 0);
         } else {
-            assertEquals("The note was created when it shouldn't", -1, actual);
+            assertEquals("The category was created when it shouldn't", -1, actual);
         }
     }
 
@@ -253,6 +267,17 @@ public class NotesDbAdapterTest extends AndroidTestCase {
         }
     }
 
+    private void testLotsOfNotes(long amount, long result) {
+        for (int i = 0; i < amount; ++i) {
+            final long actual = adapter.createNote("volume_" + i, "n" + i, null);
+            if (result >= 0) {
+                assertTrue("The note was not created when it should", actual >= 0);
+            } else {
+                assertEquals("The note was created when it shouldn't", -1, actual);
+            }
+        }
+    }
+
     // ------------------- Utils -------------------
 
     /**
@@ -288,32 +313,19 @@ public class NotesDbAdapterTest extends AndroidTestCase {
 
     // ------------------- setUp/TearDown -------------------
 
-    // to allow accesing the private field mDb and start/end transaction (see below)
-    private Field privateField_mDb;
-
-    {
-        try {
-            // set the field to accesible
-            privateField_mDb = NotesDbAdapter.class.getDeclaredField("mDb");
-            privateField_mDb.setAccessible(true);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     @Override
     public void setUp() throws Exception {
         adapter = new NotesDbAdapter(getContext());
 
         // open database and start transaction
         adapter.open();
-        ((SQLiteDatabase) privateField_mDb.get(adapter)).beginTransaction();
+        Reflection.<SQLiteDatabase>getPrivate(adapter,"mDb").beginTransaction();
     }
 
     @Override
     public void tearDown() throws Exception {
         // end transaction without setting as successful (so changes are discarded), then close
-        ((SQLiteDatabase) privateField_mDb.get(adapter)).endTransaction();
+        Reflection.<SQLiteDatabase>getPrivate(adapter,"mDb").endTransaction();
         adapter.close();
     }
 

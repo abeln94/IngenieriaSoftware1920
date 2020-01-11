@@ -1,22 +1,14 @@
 package es.unizar.eina.notepadvT;
 
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.CursorAdapter;
 import android.widget.EditText;
-import android.widget.SimpleAdapter;
 import android.widget.SimpleCursorAdapter;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 /**
  * Actividad para editar las notas
@@ -98,7 +90,7 @@ public class NoteEdit extends AppCompatActivity {
                     note.getColumnIndexOrThrow(NotesDbAdapter.KEY_BODY)));
             Cursor category = mDbHelper.fetchCategory(note.getInt(
                     note.getColumnIndexOrThrow(NotesDbAdapter.KEY_CATEGORY)));
-            if(category.getCount() != 0) {
+            if(category != null) {
                 mCategory.setText(category.getString(
                         category.getColumnIndexOrThrow(NotesDbAdapter.KEY_NAME)
                 ));
