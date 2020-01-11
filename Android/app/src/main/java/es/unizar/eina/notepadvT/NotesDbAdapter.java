@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
@@ -108,12 +109,14 @@ public class NotesDbAdapter {
      * successfully created return the new rowId for that note, otherwise return
      * a -1 to indicate failure.
      *
-     * @param title the title of the note
-     * @param body  the body of the note
+     * @param title    the title of the note
+     * @param body     the body of the note
      * @param category the category id (null for no category)
      * @return rowId or -1 if failed
      */
     public long createNote(String title, String body, Integer category) {
+        if (title == null || title.isEmpty() || body == null || (category != null && category < 0)) return -1;
+
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_TITLE, title);
         initialValues.put(KEY_BODY, body);
@@ -137,27 +140,32 @@ public class NotesDbAdapter {
      * Can be sorted by a data column (KEY_TITLE, KEY_CATEGORY, ...)
      * Can be filtered by category name
      *
-     * @param orderBy if null not ordered. if not, order by that column name
+     * @param orderBy  if null not ordered. if not, order by that column name
      * @param category if null show all, if not, show only notes with that category name (not id)
      * @return a cursor with the notes
      */
     public Cursor fetchAllNotes(String orderBy, String category) {
+        try {
 //        if (category != null) {
 //            category = KEY_CATEGORY + "=" + fetchCategory(category);
 //        }
-        //return mDb.rawQuery("SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + "," + KEY_TITLE + "," + KEY_BODY + "," + KEY_NAME + " FROM " + DATABASE_TABLE_NOTES + " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES+"."+KEY_ROWID,null);
-        return mDb.rawQuery(
-                "SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + ", " +
-                        KEY_TITLE + ", " +
-                        KEY_BODY + ", " +
-                        DATABASE_TABLE_CATEGORIES + "." + KEY_NAME + " AS " + KEY_NAME +
-                        " FROM " + DATABASE_TABLE_NOTES + "" +
-                        " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES + "." + KEY_ROWID +
-                        (category != null ? " WHERE " + KEY_NAME + "='" + category + '\'' : "") +
-                        (orderBy != null ? " ORDER BY " + orderBy : "")
-                , null);
+            //return mDb.rawQuery("SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + "," + KEY_TITLE + "," + KEY_BODY + "," + KEY_NAME + " FROM " + DATABASE_TABLE_NOTES + " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES+"."+KEY_ROWID,null);
+            return mDb.rawQuery(
+                    "SELECT " + DATABASE_TABLE_NOTES + "." + KEY_ROWID + " AS " + KEY_ROWID + ", " +
+                            KEY_TITLE + ", " +
+                            KEY_BODY + ", " +
+                            DATABASE_TABLE_CATEGORIES + "." + KEY_NAME + " AS " + KEY_NAME +
+                            " FROM " + DATABASE_TABLE_NOTES + "" +
+                            " LEFT JOIN " + DATABASE_TABLE_CATEGORIES + " ON " + DATABASE_TABLE_NOTES + '.' + KEY_CATEGORY + '=' + DATABASE_TABLE_CATEGORIES + "." + KEY_ROWID +
+                            (category != null ? " WHERE " + KEY_NAME + "='" + category + '\'' : "") +
+                            (orderBy != null ? " ORDER BY " + orderBy : "")
+                    , null);
 //        return mDb.query(DATABASE_TABLE_NOTES, new String[]{KEY_ROWID, KEY_TITLE,
 //                KEY_BODY, KEY_CATEGORY}, category, null, null, null, orderBy);
+        } catch (SQLiteException e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 
     /**
@@ -168,14 +176,13 @@ public class NotesDbAdapter {
      * @throws SQLException if note could not be found/retrieved
      */
     public Cursor fetchNote(long rowId) throws SQLException {
-
         Cursor mCursor =
-
                 mDb.query(true, DATABASE_TABLE_NOTES, new String[]{KEY_ROWID,
                                 KEY_TITLE, KEY_BODY, KEY_CATEGORY}, KEY_ROWID + "=" + rowId, null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
+            if (mCursor.getCount() == 0) mCursor = null;
         }
         return mCursor;
 
@@ -192,6 +199,8 @@ public class NotesDbAdapter {
      * @return true if the note was successfully updated, false otherwise
      */
     public boolean updateNote(long rowId, String title, String body, Integer category) {
+        if(title == null || title.isEmpty() || body == null || (category != null && category < 0)) return false;
+
         ContentValues args = new ContentValues();
         args.put(KEY_TITLE, title);
         args.put(KEY_BODY, body);
@@ -209,6 +218,8 @@ public class NotesDbAdapter {
      * @return rowId or -1 if failed
      */
     public long createCategory(String name) {
+        if (name == null || name.isEmpty()) return -1;
+
         ContentValues initialValues = new ContentValues();
         initialValues.put(KEY_NAME, name);
 
@@ -243,12 +254,14 @@ public class NotesDbAdapter {
      * @throws SQLException if note could not be found/retrieved
      */
     public Cursor fetchCategory(long rowId) throws SQLException {
+
         Cursor mCursor =
                 mDb.query(true, DATABASE_TABLE_CATEGORIES, new String[]{KEY_ROWID,
                                 KEY_NAME}, KEY_ROWID + "=" + rowId, null,
                         null, null, null, null);
         if (mCursor != null) {
             mCursor.moveToFirst();
+            if (mCursor.getCount() == 0) mCursor = null;
         }
         return mCursor;
     }
@@ -286,6 +299,8 @@ public class NotesDbAdapter {
      * @return true if the note was successfully updated, false otherwise
      */
     public boolean updateCategory(long rowId, String name) {
+        if(name == null || name.isEmpty()) return false;
+
         ContentValues args = new ContentValues();
         args.put(KEY_NAME, name);
 

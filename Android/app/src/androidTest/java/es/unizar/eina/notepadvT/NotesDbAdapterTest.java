@@ -247,9 +247,9 @@ public class NotesDbAdapterTest extends AndroidTestCase {
     private void testUpdateCategory(long rowId, String name, boolean result) {
         final boolean actual = adapter.updateCategory(rowId, name);
         if (result) {
-            assertTrue("The category was updated but it shouldn't", actual);
+            assertTrue("The category wasn't updated but it should", actual);
         } else {
-            assertFalse("The category wasn't updated but it should", actual);
+            assertFalse("The category was updated but it shouldn't", actual);
         }
     }
 
