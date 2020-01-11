@@ -101,7 +101,9 @@ public class NotepadvT extends AppCompatActivity {
         String category = null;
         if (mFilter.isChecked()) {
             Cursor category_cursor = (Cursor) mCategories.getSelectedItem();
-            category = category_cursor.getString(category_cursor.getColumnIndex(NotesDbAdapter.KEY_NAME));
+            if(category_cursor != null) {
+                category = category_cursor.getString(category_cursor.getColumnIndex(NotesDbAdapter.KEY_NAME));
+            }
         }
         String sortBy = null;
         switch (mSortBy.getCheckedRadioButtonId()) {

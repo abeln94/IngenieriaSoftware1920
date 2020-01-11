@@ -174,6 +174,24 @@ public class NotesDbAdapterTest extends AndroidTestCase {
         testLotsOfNotes(1050, 1);
     }
 
+    // ------------------- Other tests -------------------
+
+    public void testCheckMaxLong(){
+        int lengthValid = 0;
+        StringBuilder string = new StringBuilder();
+        boolean valid = true;
+        while(valid){
+            for(int i=0;i<10;++i) string.append('.');
+            try{
+                valid = adapter.createNote(string.toString(), string.toString(), null) != -1;
+                if(valid) lengthValid = string.length();
+            }catch (Exception e){
+                valid = false;
+            }
+        }
+        System.out.println("Max valid length: "+lengthValid);
+    }
+
     // ------------------- TestManagers -------------------
 
     private void testCreateNote(String title, String body, Integer category, long result) {
