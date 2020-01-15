@@ -17,7 +17,6 @@
         <COMPID name="Asignar categoria(Analisis)" mc="Standard.Interaction" uid="0f455975-6dda-4ca0-950e-53865c58515d"/>
         <COMPID name="Borrar nota(Analisis)" mc="Standard.Interaction" uid="d1b1c0e0-3ed3-4f46-b2db-0c402c7e59e4"/>
         <COMPID name="Consultar lista de notas ya existentes(Analisis)" mc="Standard.Interaction" uid="9bdbfc29-90eb-4109-85c3-2f36679fa189"/>
-        <COMPID name="Inicializacion de la aplicacion(Analisis)" mc="Standard.Interaction" uid="58fc6ce6-2cc8-422f-965d-29f4bfcbbd53"/>
         <COMPID name="Crear nota (Analisis)" mc="Standard.Interaction" uid="ed4f808a-c0e2-4b61-a151-036c18a9ffc7"/>
         <COMPID name="Crear categoria(Analisis)" mc="Standard.Interaction" uid="10d51b69-3d64-4cda-91d9-51f146707973"/>
         <COMPID name="Actualizar nota(Analisis)" mc="Standard.Interaction" uid="778f2fe4-f102-41e8-af48-1c843b8e1f02"/>

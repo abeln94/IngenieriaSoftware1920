@@ -1,7 +1,14 @@
-#Wed Jan 15 14:36:00 CET 2020
-org.modelio.model.search.SearchHistory1=mdbH
+#Wed Jan 15 16:33:21 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams9='Crear categoria(Analisis)' {d6620f26-4e17-4c7a-b843-d2821622f460} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams8='Crear nota(Analisis)' {5bfa8374-1f2a-450f-aede-7366bde572b1} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Consultar lista de notas ya existentes(Analisis)' {34889527-572c-422f-b46e-a3ff6b438e2d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Borrar nota(Analisis)' {591ea721-8f9a-4910-bd0a-80bf04fb3618} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Asignar categoria(Analisis)' {f7fc9a08-ea8b-4de2-bf1a-596a5771bd2d} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams4='Diagrama de clases analisis' {01295ce4-b332-4ec8-89de-01aea966107f} Standard.ClassDiagram
 org.modelio.diagram.editor.OpenedDiagrams3='Eliminar categoria(Analisis)' {74337ffb-bd4f-4910-b14f-e0f4c6a6016d} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams2='Trabajo Class diagram' {8042f457-3267-4422-ade7-cc8b4d3f3bd2} Standard.ClassDiagram
 org.modelio.diagram.editor.OpenedDiagrams1='Enviar nota' {32173c34-8ee6-4f5b-92b8-0d8e4261e1fb} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams11='Modificar categoria(Analisis)' {aec0ca05-f540-4b1c-a105-212c9c6fd66a} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Diagrama casos de uso' {0f6f94d1-2235-4c69-88d7-5adb702540f5} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Actualizar nota(Analisis)' {67076f0a-b483-474c-9c05-11d03a5b6fc3} Standard.SequenceDiagram
+org.modelio.model.search.SearchHistory1=mdbH
