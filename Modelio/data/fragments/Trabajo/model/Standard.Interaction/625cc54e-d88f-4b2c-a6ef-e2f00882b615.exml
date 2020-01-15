@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Buscar todas las notas" version="4">
   <OBJECT>
     <ID name="Buscar todas las notas" mc="Standard.Interaction" uid="625cc54e-d88f-4b2c-a6ef-e2f00882b615"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Buscar todas las notas]]></ATT>
@@ -37,7 +37,7 @@
                   </LINK>
                   <LINK relation="Invoked">
                     <REFOBJ>
-                      <ID name="fectchAllNotes" mc="Standard.Operation" uid="9fe8c601-dd95-4c5f-9090-c3ed94d6799a"/>
+                      <ID name="fetchAllNotes" mc="Standard.Operation" uid="9fe8c601-dd95-4c5f-9090-c3ed94d6799a"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -444,7 +444,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="Notepadv1" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
+                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
@@ -460,7 +460,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="NotesDbAdapter()" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+                    <ID name="NotesDbAdapter" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

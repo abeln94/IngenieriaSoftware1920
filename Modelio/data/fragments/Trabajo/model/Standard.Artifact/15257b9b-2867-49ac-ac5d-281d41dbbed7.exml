@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="appSMS.apk" version="4">
   <OBJECT>
     <ID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
     <ATTRIBUTES>
       <ATT name="FileName"></ATT>
       <ATT name="IsAbstract">false</ATT>

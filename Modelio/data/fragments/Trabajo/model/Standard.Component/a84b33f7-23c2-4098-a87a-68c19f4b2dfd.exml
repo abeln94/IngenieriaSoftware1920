@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="database" version="4">
   <OBJECT>
     <ID name="database" mc="Standard.Component" uid="a84b33f7-23c2-4098-a87a-68c19f4b2dfd"/>
-    <PID name="Trabajo" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

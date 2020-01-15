@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Enviar nota" version="4">
   <OBJECT>
     <ID name="Enviar nota" mc="Standard.Interaction" uid="01d2af3c-db85-4ffd-8e3a-caaf82a2397e"/>
-    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Enviar nota]]></ATT>

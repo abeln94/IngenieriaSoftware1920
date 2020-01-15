@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Eliminar categoria(Analisis)" version="4">
   <OBJECT>
     <ID name="Eliminar categoria(Analisis)" mc="Standard.Interaction" uid="c0509513-e197-401b-be59-0c7b3c2a6a7c"/>
-    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Analisis" mc="Standard.Package" uid="137e5b2e-7a34-4d89-9387-8fe3c0547616"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Eliminar categoria(Analisis)]]></ATT>

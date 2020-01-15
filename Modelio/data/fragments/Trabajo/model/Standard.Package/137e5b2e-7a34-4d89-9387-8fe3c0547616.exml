@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Analisis" version="4">
+  <OBJECT>
+    <ID name="Analisis" mc="Standard.Package" uid="137e5b2e-7a34-4d89-9387-8fe3c0547616"/>
+    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Analisis]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Asignar categoria(Analisis)" mc="Standard.Interaction" uid="0f455975-6dda-4ca0-950e-53865c58515d"/>
+        <COMPID name="Borrar nota(Analisis)" mc="Standard.Interaction" uid="d1b1c0e0-3ed3-4f46-b2db-0c402c7e59e4"/>
+        <COMPID name="Consultar lista de notas ya existentes(Analisis)" mc="Standard.Interaction" uid="9bdbfc29-90eb-4109-85c3-2f36679fa189"/>
+        <COMPID name="Inicializacion de la aplicacion(Analisis)" mc="Standard.Interaction" uid="58fc6ce6-2cc8-422f-965d-29f4bfcbbd53"/>
+        <COMPID name="Crear nota (Analisis)" mc="Standard.Interaction" uid="ed4f808a-c0e2-4b61-a151-036c18a9ffc7"/>
+        <COMPID name="Crear categoria(Analisis)" mc="Standard.Interaction" uid="10d51b69-3d64-4cda-91d9-51f146707973"/>
+        <COMPID name="Actualizar nota(Analisis)" mc="Standard.Interaction" uid="778f2fe4-f102-41e8-af48-1c843b8e1f02"/>
+        <COMPID name="Modificar categoria(Analisis)" mc="Standard.Interaction" uid="c06a842e-62c0-44d7-b4e1-5e4bc2265e1c"/>
+        <COMPID name="Eliminar categoria(Analisis)" mc="Standard.Interaction" uid="c0509513-e197-401b-be59-0c7b3c2a6a7c"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Categoria" mc="Standard.Class" uid="694feee4-35e5-4f0e-ae4b-4dfa8703344a"/>
+        <COMPID name="Nota" mc="Standard.Class" uid="2000dfe9-0aa4-42b1-b905-24d67e4dfff6"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagrama de clases analisis" mc="Standard.ClassDiagram" uid="01295ce4-b332-4ec8-89de-01aea966107f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

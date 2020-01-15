@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Inicializacion de la aplicacion(Analisis)" version="4">
   <OBJECT>
     <ID name="Inicializacion de la aplicacion(Analisis)" mc="Standard.Interaction" uid="58fc6ce6-2cc8-422f-965d-29f4bfcbbd53"/>
-    <PID name="Aplicación" mc="Standard.Package" uid="f836e9b6-88fd-4728-94f0-e2112feb3a47"/>
+    <PID name="Analisis" mc="Standard.Package" uid="137e5b2e-7a34-4d89-9387-8fe3c0547616"/>
     <ATTRIBUTES>
       <ATT name="IsReentrant">false</ATT>
       <ATT name="Name"><![CDATA[Inicializacion de la aplicacion(Analisis)]]></ATT>
