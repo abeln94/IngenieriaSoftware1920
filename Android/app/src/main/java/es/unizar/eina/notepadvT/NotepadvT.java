@@ -15,6 +15,8 @@ import android.widget.RadioGroup;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 
+import es.unizar.eina.notepadvT.categories.Categories;
+import es.unizar.eina.notepadvT.database.NotesDbAdapter;
 import es.unizar.eina.send.SendAbstractionImpl;
 
 /**

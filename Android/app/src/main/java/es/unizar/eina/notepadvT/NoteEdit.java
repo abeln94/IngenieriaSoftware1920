@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.SimpleCursorAdapter;
 
+import es.unizar.eina.notepadvT.database.NotesDbAdapter;
+
 /**
  * Actividad para editar las notas
  */

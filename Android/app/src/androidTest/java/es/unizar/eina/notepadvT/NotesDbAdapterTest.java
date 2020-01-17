@@ -4,6 +4,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.test.AndroidTestCase;
 
+import es.unizar.eina.notepadvT.database.NotesDbAdapter;
+
 public class NotesDbAdapterTest extends AndroidTestCase {
 
     // ------------------- Tests -------------------

@@ -3,6 +3,8 @@ package es.unizar.eina.notepadvT;
 import android.database.Cursor;
 import android.test.AndroidTestCase;
 
+import es.unizar.eina.notepadvT.database.NotesDbAdapter;
+
 public class NotesDbAdapterUtils extends AndroidTestCase {
 
     public void testCreateLotsOfNotes(){

@@ -9,8 +9,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <activity android:name=".CategoryEdit" />
-        <activity android:name=".Categories" />
+        <activity android:name=".categories.CategoryEdit" />
+        <activity android:name=".categories.Categories" />
         <activity
             android:name=".NotepadvT"
             android:label="@string/app_name">
