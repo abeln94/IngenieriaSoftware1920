@@ -55,6 +55,8 @@
         <COMPID name="Crear nota" mc="Standard.UseCase" uid="69f62ee5-a8d4-4ec0-aff1-3e277955e9ca"/>
         <COMPID name="appSMS.apk" mc="Standard.Artifact" uid="15257b9b-2867-49ac-ac5d-281d41dbbed7"/>
         <COMPID name="enum" mc="Standard.DataType" uid="86766ee8-e6a2-45a6-8197-64393e64aedb"/>
+        <COMPID name="Servidor correos" mc="Standard.Node" uid="86adbafc-170b-478b-8db5-a3e8f3c0d7df"/>
+        <COMPID name="Servidor SMS" mc="Standard.Node" uid="177a7886-6a1c-43b3-a8b5-dca17cdcabe5"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>

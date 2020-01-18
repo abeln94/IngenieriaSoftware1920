@@ -13,19 +13,17 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="Used">
+      <COMP relation="Parent">
         <OBJECT>
-          <ID name="UseCaseDependency" mc="Standard.UseCaseDependency" uid="cc729a2f-c2c3-403d-92f2-2560fe851131"/>
+          <ID name="Generalization" mc="Standard.Generalization" uid="b33bf749-bc3c-42b6-8292-4112019602eb"/>
           <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[UseCaseDependency]]></ATT>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Target">
+            <LINK relation="SuperType">
               <ID name="Enviar nota" mc="Standard.UseCase" uid="bad1ea54-df17-4919-9b9a-18d91d32cdf2"/>
-            </LINK>
-            <LINK relation="Extension">
-              <FOREIGNID name="extend" mc="Infrastructure.Stereotype" uid="00000000-0000-9c48-0000-000000000000"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

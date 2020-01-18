@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Servidor SMS" version="4">
+  <OBJECT>
+    <ID name="Servidor SMS" mc="Standard.Node" uid="177a7886-6a1c-43b3-a8b5-dca17cdcabe5"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Servidor SMS]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

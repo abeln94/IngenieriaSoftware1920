@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Servidor correos" version="4">
+  <OBJECT>
+    <ID name="Servidor correos" mc="Standard.Node" uid="86adbafc-170b-478b-8db5-a3e8f3c0d7df"/>
+    <PID name="Diseño" mc="Standard.Package" uid="f8a465cf-49f8-4159-85c8-97fa76bd8917"/>
+    <ATTRIBUTES>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Servidor correos]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>
