@@ -61,10 +61,11 @@
       <COMP relation="Product">
         <COMPID name="Trabajo Class diagram" mc="Standard.ClassDiagram" uid="8042f457-3267-4422-ade7-cc8b4d3f3bd2"/>
         <COMPID name="Diagrama casos de uso" mc="Standard.UseCaseDiagram" uid="0f6f94d1-2235-4c69-88d7-5adb702540f5"/>
-        <COMPID name="Diagrama de paquetes" mc="Standard.ClassDiagram" uid="60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4"/>
+        <COMPID name="Diagrama de paquetes detallado" mc="Standard.ClassDiagram" uid="60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4"/>
         <COMPID name="Diagrama despliegue" mc="Standard.DeploymentDiagram" uid="189503b0-465a-47b4-a10e-8a2bc9f62491"/>
         <COMPID name="Diagrama de componentes" mc="Standard.ClassDiagram" uid="d85c37bd-c4d9-4389-8161-690f2d548111"/>
         <COMPID name="patron bridge" mc="Standard.ClassDiagram" uid="c49472ba-35ce-4ea2-aec5-000414493e38"/>
+        <COMPID name="Diagrama de paquetes simple" mc="Standard.ClassDiagram" uid="d3273186-723c-4c80-80f2-cf972fc86734"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
