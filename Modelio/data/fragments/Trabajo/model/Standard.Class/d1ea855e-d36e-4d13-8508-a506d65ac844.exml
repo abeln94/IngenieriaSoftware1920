@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="EditText" version="4">
   <OBJECT>
     <ID name="EditText" mc="Standard.Class" uid="d1ea855e-d36e-4d13-8508-a506d65ac844"/>
-    <PID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
+    <PID name="widget" mc="Standard.Package" uid="9f13c741-6546-4cef-8c65-9c85e88885c1"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

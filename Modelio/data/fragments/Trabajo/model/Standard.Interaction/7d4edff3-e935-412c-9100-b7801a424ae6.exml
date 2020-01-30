@@ -970,7 +970,7 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="Base">
-                    <ID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
+                    <ID name="NotepadvT" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>

@@ -11,28 +11,28 @@
     <DEPENDENCIES>
       <COMP relation="Fragment">
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="d157aa29-2397-4cc7-86c0-798c3043dde8"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="5be9fb14-1339-46a4-9a0a-e4488387b9c9"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">59</ATT>
+            <ATT name="LineNumber">77</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <COMP relation="SentMessage">
               <OBJECT>
-                <ID name="" mc="Standard.Message" uid="e5fd9b7d-68bc-4ab5-94a9-f1efd1e985be"/>
+                <ID name="create" mc="Standard.Message" uid="8a78ab8e-5633-48a7-8a1d-bc8d69f6e168"/>
                 <ATTRIBUTES>
                   <ATT name="Argument"><![CDATA[titulo, cuerpo]]></ATT>
                   <ATT name="KindOfMessage">CompleteKind</ATT>
-                  <ATT name="SortOfMessage">SyncCall</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
                   <ATT name="Sequence"><![CDATA[1]]></ATT>
-                  <ATT name="Name"></ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <LINK relation="ReceiveEvent">
                     <REFOBJ>
-                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fc5d4ce5-cf5d-48d0-aeca-d2d141ced01e"/>
+                      <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a306eb9b-1429-4fde-b96f-76fd2df75819"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="Invoked">
@@ -51,53 +51,13 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="fc5d4ce5-cf5d-48d0-aeca-d2d141ced01e"/>
+          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a306eb9b-1429-4fde-b96f-76fd2df75819"/>
           <ATTRIBUTES>
-            <ATT name="LineNumber">59</ATT>
+            <ATT name="LineNumber">77</ATT>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
-            <LINK relation="Started">
-              <REFOBJ>
-                <ID name="" mc="Standard.ExecutionSpecification" uid="bbb64241-77a4-4db0-96dd-76508a4f739f"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="r1" mc="Standard.Lifeline" uid="67b08e78-a48e-494f-88c8-8f7126cd8985"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a7f4d310-b947-4848-a0f2-e8228856f898"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">119</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Covered">
-              <REFOBJ>
-                <ID name="r1" mc="Standard.Lifeline" uid="67b08e78-a48e-494f-88c8-8f7126cd8985"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.ExecutionSpecification" uid="bbb64241-77a4-4db0-96dd-76508a4f739f"/>
-          <ATTRIBUTES>
-            <ATT name="LineNumber">59</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="Finish">
-              <REFOBJ>
-                <ID name="" mc="Standard.ExecutionOccurenceSpecification" uid="a7f4d310-b947-4848-a0f2-e8228856f898"/>
-              </REFOBJ>
-            </LINK>
             <LINK relation="Covered">
               <REFOBJ>
                 <ID name="r1" mc="Standard.Lifeline" uid="67b08e78-a48e-494f-88c8-8f7126cd8985"/>

@@ -1,32 +1,32 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="es.unizar.eina" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="categories" version="4">
   <OBJECT>
-    <ID name="es.unizar.eina" mc="Standard.Package" uid="88fadc56-fd76-462a-96d7-d0a7848f0021"/>
-    <PID name="application" mc="Standard.Component" uid="12a330d2-c59c-4e03-908b-768d63f76e58"/>
+    <ID name="categories" mc="Standard.Package" uid="9c3e9330-9a55-4e7b-9318-127bb12c55ae"/>
+    <PID name="notepadvT" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[es.unizar.eina]]></ATT>
+      <ATT name="Name"><![CDATA[categories]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="send" mc="Standard.Package" uid="8b00dc7a-737f-4b1d-a8d5-3e48d565cef6"/>
-        <COMPID name="notepadvT" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
+        <COMPID name="CategoryEdit" mc="Standard.Class" uid="21df78e0-5d3a-410f-92fd-1f55fdf12433"/>
+        <COMPID name="Categories" mc="Standard.Class" uid="e8779a58-78bc-4b3e-9b7e-f2a862c7b01f"/>
       </COMP>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Standard.Usage" uid="e12e6ea2-980a-4afa-b90e-5e8ab6135183"/>
+          <ID name="" mc="Standard.Usage" uid="fdd09030-2dbd-44cd-ae62-2ba4cbd7f1c7"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="android" mc="Standard.Package" uid="88ae3eb2-3ed2-42e2-a22a-0714c73d571c"/>
+              <ID name="database" mc="Standard.Package" uid="dd825c31-f1e3-445d-898a-96f88d703757"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

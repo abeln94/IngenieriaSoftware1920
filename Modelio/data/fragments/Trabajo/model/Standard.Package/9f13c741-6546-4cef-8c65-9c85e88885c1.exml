@@ -17,6 +17,7 @@
         <COMPID name="ListView" mc="Standard.Class" uid="c33b7cb7-b123-4382-95cd-98bdd82fc47e"/>
         <COMPID name="SimpleCursorAdapter" mc="Standard.Class" uid="08d6e525-cf92-4d8a-aa47-c3fea7beb47a"/>
         <COMPID name="TextView" mc="Standard.Class" uid="fb268705-5fd6-4bba-a612-e8bacfb6098a"/>
+        <COMPID name="EditText" mc="Standard.Class" uid="d1ea855e-d36e-4d13-8508-a506d65ac844"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

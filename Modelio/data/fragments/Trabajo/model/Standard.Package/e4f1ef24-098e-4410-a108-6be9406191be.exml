@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="notepadv3" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="notepadvT" version="4">
   <OBJECT>
-    <ID name="notepadv3" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
+    <ID name="notepadvT" mc="Standard.Package" uid="e4f1ef24-098e-4410-a108-6be9406191be"/>
     <PID name="es.unizar.eina" mc="Standard.Package" uid="88fadc56-fd76-462a-96d7-d0a7848f0021"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
@@ -9,16 +9,53 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[notepadv3]]></ATT>
+      <ATT name="Name"><![CDATA[notepadvT]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Notepadv3" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
-        <COMPID name="NotesDbAdapter" mc="Standard.Class" uid="c8028ac1-79b4-40a0-9006-3d1dd57c706d"/>
+        <COMPID name="NotepadvT" mc="Standard.Class" uid="d53a4ffa-83b6-4727-b559-8a65d90703a1"/>
         <COMPID name="NoteEdit" mc="Standard.Class" uid="d3b01e72-8b3e-4d6d-af1d-42073bb5ff9d"/>
-        <COMPID name="EditText" mc="Standard.Class" uid="d1ea855e-d36e-4d13-8508-a506d65ac844"/>
-        <COMPID name="CategoryEdit" mc="Standard.Class" uid="21df78e0-5d3a-410f-92fd-1f55fdf12433"/>
+        <COMPID name="categories" mc="Standard.Package" uid="9c3e9330-9a55-4e7b-9318-127bb12c55ae"/>
+        <COMPID name="database" mc="Standard.Package" uid="dd825c31-f1e3-445d-898a-96f88d703757"/>
+      </COMP>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="bb0342bd-3068-45f2-98f2-d7f0ccea6052"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="send" mc="Standard.Package" uid="8b00dc7a-737f-4b1d-a8d5-3e48d565cef6"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="8709f151-3834-483d-93ef-1f8ad542b275"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="categories" mc="Standard.Package" uid="9c3e9330-9a55-4e7b-9318-127bb12c55ae"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.Usage" uid="47fce29b-042a-438d-bdd8-72ac59d56e82"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="database" mc="Standard.Package" uid="dd825c31-f1e3-445d-898a-96f88d703757"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -1,3 +1,20 @@
-#Mon Jan 27 08:33:54 CET 2020
+#Thu Jan 30 17:42:33 CET 2020
 org.modelio.model.search.SearchHistory1=mdbH
+org.modelio.diagram.editor.OpenedDiagrams9='Diagrama despliegue' {189503b0-465a-47b4-a10e-8a2bc9f62491} Standard.DeploymentDiagram
+org.modelio.diagram.editor.OpenedDiagrams8='Diagrama casos de uso' {0f6f94d1-2235-4c69-88d7-5adb702540f5} Standard.UseCaseDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Diagrama de paquetes detallado' {60ced0a7-9fa4-4f39-ab77-4fceb7c8f2c4} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='patron bridge' {c49472ba-35ce-4ea2-aec5-000414493e38} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Diagrama de componentes' {d85c37bd-c4d9-4389-8161-690f2d548111} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Diagrama de paquetes simple' {d3273186-723c-4c80-80f2-cf972fc86734} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Diagrama de clases analisis' {01295ce4-b332-4ec8-89de-01aea966107f} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Borrar nota(Analisis)' {591ea721-8f9a-4910-bd0a-80bf04fb3618} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Asignar categoria(Analisis)' {f7fc9a08-ea8b-4de2-bf1a-596a5771bd2d} Standard.SequenceDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Trabajo Class diagram' {8042f457-3267-4422-ade7-cc8b4d3f3bd2} Standard.ClassDiagram
+org.modelio.diagram.editor.OpenedDiagrams17='Inicializacion de la aplicacion' {40addec3-5647-4d0c-8f9b-6925d9512e77} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams16='Enviar nota' {32173c34-8ee6-4f5b-92b8-0d8e4261e1fb} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams15='Eliminar categoria(Analisis)' {74337ffb-bd4f-4910-b14f-e0f4c6a6016d} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams14='Modificar categoria(Analisis)' {aec0ca05-f540-4b1c-a105-212c9c6fd66a} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams13='Actualizar nota(Analisis)' {67076f0a-b483-474c-9c05-11d03a5b6fc3} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams12='Crear categoria(Analisis)' {d6620f26-4e17-4c7a-b843-d2821622f460} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams11='Crear nota(Analisis)' {5bfa8374-1f2a-450f-aede-7366bde572b1} Standard.SequenceDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Consultar lista de notas ya existentes(Analisis)' {34889527-572c-422f-b46e-a3ff6b438e2d} Standard.SequenceDiagram
